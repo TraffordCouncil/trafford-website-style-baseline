@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    COMBINED STYLESHEET
+    
+    This sheet should contain all
+    the styles necessary to correctly
+    style a page/site
+\*------------------------------------*/
+
+@import "base/reset";        // css reset
+@import "base/variables";    // common values
+@import "base/mixins";    // sass mixins
+@import "base/typography";    // fonts, sizes, line heights etc.
+@import "base/common";    // common css classes and sass placeholders
+
+@import "layout/grids";    // responsive grids
+
+@import "objects/navigation";    // navigation items (navigation bars etc.)
+@import "objects/objects";    // other misc page objects
+
+@import "vendor/restyle-contensis";    // reset contensis cms styles

@@ -1,0 +1,10 @@
+*.log
+*.map
+*.css
+/css/**
+/.sass-cache/**
+*.orig
+
+!100-reset.css
+!200-skeleton.css
+!300-base.css
