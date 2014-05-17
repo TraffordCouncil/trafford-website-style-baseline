@@ -13,73 +13,41 @@
     <link href="http://www.trafford.gov.uk/SiteElements/Stylesheets/300-base.css" rel="stylesheet" type="text/css" />
     <link href="http://www.trafford.gov.uk/SiteElements/Stylesheets/400-layout.css" rel="stylesheet" type="text/css" />
     <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js'></script>
-    <script type='text/javascript'>
-        if (typeof jQuery == 'undefined') {
-            document.write('<script src="//www.trafford.gov.uk/SiteElements/Scripts/jquery-172min.js">\x3C/script>');
-        }
-    </script>
     <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-1.2.1.min.js'></script>
     <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
-    <script type='text/javascript'>
-        if (typeof jQuery.validate === 'undefined') {
-            document.write('<script src="//www.trafford.gov.uk/SiteElements/Scripts/jqueryvalidatemin.js">\x3C/script>');
-        }
-    </script>
     <script type='text/javascript' src='/SiteElements/Scripts/cookie-consent.js'></script>
     <script type='text/javascript' src='/SiteElements/Scripts/script.js'></script>
-    <script type='text/javascript' src='/SiteElements/Scripts/google-analytics-extras.js'></script>
     <!--[if lte IE 8]><style>.do-it > div{margin-left:11px;} .atoz li{float:left;width:30px;} .atoz li.title{width:40px;margin-left:10px;} .footer .links li {display:inline;padding-left:20px;padding-right:20px;}</style><![endif]-->
-    <script type='text/javascript' src='/SiteElements/Scripts/Twitter.js'></script>
-
-    <script type="text/javascript">
-        //<![CDATA[
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', "UA-1885688-26"]);
-        _gaq.push(['_trackPageview']);
-        _gaq.push(['_trackPageLoadTime']);
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-         //]]>
-    </script>
 </head>
 
 <body>
-    <form method="post" action="/residents/family-matters/adoption/who-needs-adoption.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+    
         <div class="residenthome">
             <div class="container">
                 <a id="top" name="top"></a>
                 <div class="sixteen columns header">
                     <div class="header-overlay">
-                        <a href="http://www.trafford.gov.uk/residents/FWW/first-world-war-centenary.aspx" class="sys_0 sys_t33011" title="First World War Centenary">
-                            <img src="//www.trafford.gov.uk/SiteElements/Images/centenary1-960149x97.png" width="149" height="97" alt="First World War Centenary" />
-                        </a>
-                        <span style="display:none">|</span>
+                        <!-- OPTIONAL HEADER OVERLAY -->
                     </div>
                     <div class="headerinner">
                         <div class="three columns alpha logo">
-                            <a href="http://www.trafford.gov.uk/residents/residents.aspx" class="sys_0 sys_t7238" title="Residents">
-                                <img src="//www.trafford.gov.uk/SiteElements/Images/TClogo2.png" width="132" height="132" alt="TClogo2" />
+                            <a href="http://www.trafford.gov.uk/residents/residents.aspx"  title="Residents">
+                                <img src="//www.trafford.gov.uk/SiteElements/Images/TClogo2.png" width="132" height="132" alt="Trafford Council" />
                             </a>
-                            <span style="display:none">|</span>
+                            
                         </div>
                         <div class="six columns omega brand">
                             <a href="http://www.trafford.gov.uk/" title="Residents">
-                                <img src="//www.trafford.gov.uk/SiteElements/Images/TClogo-top-banner.png" width="268" height="100" alt="TClogo-top-banner" />
+                                <img src="//www.trafford.gov.uk/SiteElements/Images/TClogo-top-banner.png" width="268" height="100" alt="Trafford Council" />
                             </a>
-                            <span style="display:none">|</span>
+                            
                         </div>
                         <div class="seven columns main-search">
                             <div class="search">
-                                <div class="sys_search-query-control">
-                                    <label for="SearchQueryControl_SearchTextBox" class="sys_search-label">Search</label>
-                                    <input name="SearchQueryControl_SearchTextBox" type="text" value="Search our site" id="SearchQueryControl_SearchTextBox" class="sys_searchbox" onkeypress="ContensisSubmitFromTextbox(event,&#39;SearchQueryControl_SearchButton&#39;)" />
-                                    <input type="submit" name="SearchQueryControl_SearchButton" value="Search" id="SearchQueryControl_SearchButton" title="Search" class="sys_button sys_searchbutton sys_search-button" />
+                                <div >
+                                    <label for="SearchQueryControl_SearchTextBox" >Search</label>
+                                    <input name="SearchQueryControl_SearchTextBox" type="text" value="Search our site" id="SearchQueryControl_SearchTextBox" />
+                                    <input type="submit" name="SearchQueryControl_SearchButton" value="Search" id="SearchQueryControl_SearchButton" title="Search"  />
                                 </div>
                             </div>
                         </div>
@@ -88,32 +56,28 @@
                         <div class="sixteen columns">
                             <div class="twelve columns alpha intersitenav">
                                 <div class="three columns alpha omega residents current">
-                                    <a href="http://www.trafford.gov.uk/residents/residents.aspx" class="sys_0 sys_t7238" title="Residents">
-                                        <span class="whitetext">&nbsp;&nbsp;for</span>
+                                    <a href="http://www.trafford.gov.uk/residents/residents.aspx"  title="Residents">
                                         <span class="strongtextgrey">Residents</span>
                                     </a>
-                                    <span style="display:none">|</span>
+                                    
                                 </div>
                                 <div class="three columns alpha omega business">
-                                    <a href="http://www.trafford.gov.uk/business/BusinessHome.aspx" class="sys_0 sys_t6477" title="Business">
-                                        <span class="whitetext">&nbsp;&nbsp;for</span>
+                                    <a href="http://www.trafford.gov.uk/business/BusinessHome.aspx"  title="Business">
                                         <span class="strongtextgrey">Business</span>
                                     </a>
-                                    <span style="display:none">|</span>
+                                    
                                 </div>
                                 <div class="three columns alpha omega council">
-                                    <a href="http://www.trafford.gov.uk/about-your-council/your-council.aspx" class="sys_0 sys_t9755" title="Your Council">
-                                        <span class="whitetext">&nbsp;&nbsp;your</span>
+                                    <a href="http://www.trafford.gov.uk/about-your-council/your-council.aspx"  title="Your Council">
                                         <span class="strongtextgrey">Council</span>
                                     </a>
-                                    <span style="display:none">|</span>
+                                    
                                 </div>
                                 <div class="three columns alpha omega visitors">
-                                    <a href="http://www.trafford.gov.uk/visit-trafford/visit-trafford.aspx" class="sys_0 sys_t21699" title="Visit Trafford">
-                                        <span class="whitetext">&nbsp;&nbsp;for</span>
+                                    <a href="http://www.trafford.gov.uk/visit-trafford/visit-trafford.aspx"  title="Visit Trafford">
                                         <span class="strongtextgrey">Visitors</span>
                                     </a>
-                                    <span style="display:none">|</span>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -165,89 +129,89 @@
             </div>
             <div class="container">
                 <div class="clearfix sixteen columns atoz">
-                    <div class="sys_searchcontainer">
-                        <div class="sys_atoz">
+                    <div >
+                        <div >
                             <ul>
                                 <li class="title">
                                     <span class="bluetext">a-z</span>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=a" title="See services beginning with A">A</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=a" >A</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=b" title="See services beginning with B">B</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=b" >B</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=c" title="See services beginning with C">C</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=c" >C</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=d" title="See services beginning with D">D</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=d" >D</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=e" title="See services beginning with E">E</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=e" >E</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=f" title="See services beginning with F">F</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=f" >F</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=g" title="See services beginning with G">G</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=g" >G</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=h" title="See services beginning with H">H</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=h" >H</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=i" title="See services beginning with I">I</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=i" >I</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=j" title="See services beginning with J">J</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=j" >J</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=k" title="See services beginning with K">K</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=k" >K</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=l" title="See services beginning with L">L</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=l" >L</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=m" title="See services beginning with M">M</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=m" >M</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=n" title="See services beginning with N">N</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=n" >N</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=o" title="See services beginning with O">O</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=o" >O</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=p" title="See services beginning with P">P</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=p" >P</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=q" title="See services beginning with Q">Q</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=q" >Q</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=r" title="See services beginning with R">R</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=r" >R</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=s" title="See services beginning with S">S</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=s" >S</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=t" title="See services beginning with T">T</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=t" >T</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=u" title="See services beginning with U">U</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=u" >U</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=v" title="See services beginning with V">V</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=v" >V</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=w" title="See services beginning with W">W</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=w" >W</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=x" title="See services beginning with X">X</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=x" >X</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=y" title="See services beginning with Y">Y</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=y" >Y</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=z" title="See services beginning with Z">Z</a>
+                                    <a href="http://www.trafford.gov.uk/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=z" >Z</a>
                                 </li>
                             </ul>
                         </div>
@@ -258,25 +222,25 @@
                         <div class="sixteen columns alpha omega links">
                             <ul>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/Accessibility.aspx" class="sys_0 sys_t8101" title="Accessibility">Accessibility</a>
+                                    <a href="http://www.trafford.gov.uk/residents/Accessibility.aspx"  title="Accessibility">Accessibility</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/contacts/contact-us.aspx" class="sys_0 sys_t3345" title="Contact us">Contact us</a>
+                                    <a href="http://www.trafford.gov.uk/residents/contacts/contact-us.aspx"  title="Contact us">Contact us</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/community/community-safety/emergencies/emergencies.aspx" class="sys_0 sys_t3345" title="Emergency numbers">Emergency numbers</a>
+                                    <a href="http://www.trafford.gov.uk/residents/community/community-safety/emergencies/emergencies.aspx"  title="Emergency numbers">Emergency numbers</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/translate.aspx" class="sys_0 sys_t8101">Translate</a>
+                                    <a href="http://www.trafford.gov.uk/residents/translate.aspx" >Translate</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/residents/our-customer-pledge.aspx" class="sys_0 sys_t8101" title="Our customer pledge">Customer Pledge</a>
+                                    <a href="http://www.trafford.gov.uk/residents/our-customer-pledge.aspx"  title="Our customer pledge">Customer Pledge</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/about-your-council/data-protection/trafford-council-privacy-policy.aspx" class="sys_0 sys_t5863" title="Trafford Council's Privacy Policy">Privacy policy</a>
+                                    <a href="http://www.trafford.gov.uk/about-your-council/data-protection/trafford-council-privacy-policy.aspx"  title="Trafford Council's Privacy Policy">Privacy policy</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.trafford.gov.uk/SiteMap.aspx" class="sys_0 sys_t1438" title="Site map">Sitemap</a>
+                                    <a href="http://www.trafford.gov.uk/SiteMap.aspx"  title="Site map">Sitemap</a>
                                 </li>
                             </ul>
                         </div>
@@ -285,7 +249,7 @@
                                 <a href="http://www.trafford.gov.uk" title="Trafford council website">
                                     <img src="//www.trafford.gov.uk/SiteElements/Images/TClogo-white-transparent.png" width="128" height="114" alt="TClogo-white-transparent" />
                                 </a>
-                                <span style="display:none">|</span>
+                                
                             </div>
                             <div class="three columns alpha omega contact-details">
                                 <p>
@@ -298,19 +262,19 @@
                                 <a href="http://www.youtube.com/traffordcouncil" title="YouTube">
                                     <img src="//www.trafford.gov.uk/SiteElements/Images/icons/flat-shadow/Youtube.png" width="32" height="32" alt="YouTube" />
                                 </a>
-                                <span style="display:none">|</span>
+                                
                                 <a href="http://www.twitter.com/traffordcouncil" title="Twitter">
                                     <img src="//www.trafford.gov.uk/SiteElements/Images/icons/flat-shadow/Twitter.png" width="32" height="32" alt="Twitter" />
                                 </a>
-                                <span style="display:none">|</span>
+                                
                                 <a href="http://www.flickr.com/photos/traffordcouncil/" title="Flickr">
                                     <img src="//www.trafford.gov.uk/SiteElements/Images/icons/flat-shadow/Flickr.png" width="32" height="32" alt="Flickr" />
                                 </a>
-                                <span style="display:none">|</span>
+                                
                                 <a href="http://www.facebook.com/pages/Trafford-Council/221393094541057" title="Facebook">
                                     <img src="//www.trafford.gov.uk/SiteElements/Images/icons/flat-shadow/Facebook.png" width="32" height="32" alt="Facebook" />
                                 </a>
-                                <span style="display:none">|</span>
+                                
                             </div>
                             <div class="ten columns omega browsealoud">
 
@@ -321,7 +285,7 @@
                 <!--- END OF FOOTER =-->
             </div>
         </div>
-    </form>
+    
 </body>
 
 </html>
