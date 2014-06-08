@@ -1,0 +1,59 @@
+// Common (non-content specific) classes
+
+.clearfix {
+  &:before, &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+
+// Placeholders (i.e. 'silent' classes)
+
+%body-table {
+    width: 100%;
+    caption { display: none; }
+    tr {
+        background-color: $pale-grey;
+        &:nth-of-type(even){
+            background-color: $very-pale-grey;
+        }
+    }
+    th,
+    td {
+        text-align: left;
+        vertical-align: middle;
+        padding: $base-font-size/2;
+        & >:nth-last-child(1) { margin-bottom: 0; }
+    }
+    th {
+        background-color: $theme-color;
+        color: $white;
+        font-weight: 700;
+    }
+}
+
+%inverted {
+    background-color: $theme-color;
+    color: $white;
+}
+
+%inverted-header {
+    @extend %inverted;
+    padding: $base-font-size/2;
+}
+
+%related-links {
+    background-color: $pale-grey;
+    @include font-size($base-font-size,$base-font-size/2);
+    ul { margin: 0; }
+    li {
+        list-style: none;
+        margin-bottom: 0.5;
+    }
+}
+

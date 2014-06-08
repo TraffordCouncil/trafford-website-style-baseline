@@ -1,8 +1,3 @@
-!100-reset.css
-!200-skeleton.css
-!300-base.css
-
-css
 .sass-cache
 *.orig
 *.map
@@ -35,3 +30,4 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+

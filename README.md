@@ -1,5 +1,5 @@
-Trafford Style Baseline
-=======================
+Trafford Website Style Baseline
+===============================
 
 Baseline styles for use in Trafford Council web pages and affiliated websites.
 
@@ -10,7 +10,7 @@ Very quickly it was discovered just how much effort is involved in maintaining p
 In an attempt to control the rampant spread of fudged css rules and excessive duplication,
 the entire design has been rewritten using [Sass](http://sass-lang.com/).
 
-The output css is automatically generated using [Grunt](http://gruntjs.com/).
+The css output, and other pre-deployment tasks, are created using [Grunt](http://gruntjs.com/).
 
 Content
 -------
@@ -23,10 +23,14 @@ This contains the post-compiled stylesheets. The contents of this folder should 
 
 Sample HTML test pages from the Trafford Council website for testing styling.
 
-### NODE_MODULES
+### Sass
 
-Used for Grunt. Beware: Grunt & [Node](http://nodejs.org/) updates could make changes to this folder.
+Main Sass files.
 
-### SASS
+### Images
 
-Main [Sass](http://sass-lang.com/) files.
+Standard images for use on pages and referenced by stylesheets.
+
+### SiteElements
+
+Compiled output for use in Contensis CMS. As this is compiled output, the contents from this folder should not edited.

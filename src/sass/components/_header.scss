@@ -1,0 +1,28 @@
+.header {
+    background-color: $black;
+    &inner, &__inner {
+        background-color: $theme-color;
+        @extend .clearfix;
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            text-align: center;
+            padding-top: $base-font-size;
+        }
+    }
+    &-overlay {
+        display: block;
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        top: 106px;
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            display: none;
+        }
+    }
+    .logo {
+        height: 132px;
+        vertical-align: middle;
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            display: none;
+        }
+    }
+}

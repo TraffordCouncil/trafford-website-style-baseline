@@ -1,0 +1,307 @@
+.hide,
+.fwwlogo {
+    display: none;
+}
+
+.search {
+    @extend .clearfix;
+    width: 200px;
+    margin: 45px auto;
+    @media screen and (max-width: $breakpoint-tablet - 1px) {
+        margin: 0 auto;
+        padding: $base-font-size;
+    }
+}
+
+.bodycontent,
+.body__content {
+    table, .body__table {
+        @extend %body-table;
+    }
+    li {
+        clear: left;
+    }
+}
+
+// Glossary dt items (and dt.glossary classes)
+glossary dt,
+dt.glossary {
+    border-top: 1px dashed $grey;
+    clear: left;
+    float: left;
+    font-weight: 700;
+    padding: $base-font-size*.5 0 0;
+    width: 250px;
+    &:after {
+        content: '|';
+    }
+}
+
+// Glossary dd items (and dd.glossary classes)
+glossary dd,
+dd.glossary {
+    border-top: 1px dashed $grey;
+    margin: 0 0 0 250px;
+    padding: $base-font-size*.5 0 $base-font-size*2;   
+}
+
+
+.rate-page h3,
+h3.rate-page {
+    @extend %inverted-header;
+}
+
+.news,
+.whats-on {
+    margin-bottom: $base-font-size;
+    h3 {
+        @extend %inverted-header;
+    }
+    & > a {
+        display: block;
+        margin-bottom: $base-font-size;
+    }
+}
+
+.link-more {
+    font-weight: 700;
+}
+
+.socialmedia {
+    color: $white;
+    padding: 20px 5px 5px;
+    text-align: center;
+    li {
+        display: inline;
+        &:after {
+            content: '\00a0';
+        }
+    }
+}
+
+.brand {
+    margin-top: 60px;
+    max-height: 30px;
+    overflow: hidden;
+    &:hover {
+        img {
+            margin-top: -66px;
+            overflow: hidden;
+        }
+    }
+}
+
+.image {
+    margin: 0 0 12px;
+    position: relative;
+    width: 100%;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 2px;
+    color: $white;
+    left: 0;
+    padding: 6px 6px 6px 3px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.shareprintpdf {
+    text-align: right;
+}
+
+.aside-block {
+    @extend %related-links;
+    margin-bottom: $base-font-size;
+    min-height: #{$base-font-size}*2;
+    padding: $base-font-size/2;
+    h2, h3, &__header  {
+        @extend %inverted-header;
+        @include font-size($h3-font-size, $h3-font-size); // reduce line-height
+        font-weight: 400;
+        // FF doesn't like combined margin statement here, so be specific
+        margin: $base-font-size/-2;
+        margin-bottom: $h3-font-size*0.25;
+    }
+    ol, ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    li {
+        margin-bottom: $base-font-size / 2;
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.localtoyou {
+    @extend .aside-block;
+    background-color: $black;
+    color: $white;
+}
+
+.do-it__item {
+    color: $white;
+    background-color: $dark-grey;
+    background-position: 10px top;
+    background-repeat: no-repeat;
+    color: $white;
+    float: left;
+    margin-left: 1.25%;
+    width: 19%;
+    min-height: $base-font-size * 13;
+    &:hover {
+        @extend %inverted;
+    }
+    h3 {
+        @extend %inverted-header;
+        margin-top: 70px;
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            margin: 0 0 0 80px;
+            min-height: 0;
+        }
+    }
+    p {
+        background: $black;
+        min-height: $base-font-size * 4;
+        padding: $base-font-size / 2;
+        margin-bottom: 0;
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            margin-left: 80px;
+            margin-top: 0;
+            min-height: 0;
+        }
+    }
+    @media screen and (max-width: $breakpoint-tablet - 1px) {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin: $base-font-size 0;
+        min-height: 0;
+        background-position: $base-font-size / 2 $base-font-size / 2;
+    }
+}
+
+.do-it {
+    box-sizing: border-box;
+    margin-top: $base-font-size;
+    a {
+        color: $white;
+    }
+    & > div {
+        @extend .do-it__item;
+    }
+    & >:first-child {
+        margin-left: 0;
+        overflow: hidden;
+    }
+}
+
+
+.apply {
+    @extend .do-it__item;
+    background-image: url(/Images/apply.png);
+}
+
+.book {
+    @extend .do-it__item;
+    background-image: url(/Images/book.png);
+}
+
+.pay {
+    @extend .do-it__item;
+    background-image: url(/Images/pay.png);
+}
+
+.report {
+    @extend .do-it__item;
+    background-image: url(/Images/report.png);
+}
+
+.say {
+    @extend .do-it__item;
+    background-image: url(/Images/say.png);
+}
+
+.socialmedia a {
+    color: $white;
+}
+
+.strongtext,
+.strongtextgrey {
+    font-weight: 700;
+}
+
+.site-map {
+    margin: 10px;
+}
+
+.watermark {
+    color: gray;
+}
+
+.bluetext {
+    color: $theme-color;
+}
+
+.messagebox {
+    background-color: $theme-color;
+    border: $theme-color thick solid;
+    color: $white;
+    line-height: 24px;
+    padding: 6px;
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+
+.christmasmessagebox {
+    @extend .messagebox;
+}
+
+.landingpage-list {
+    margin-left: 0;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: top;
+        width: 30%;
+    }
+}
+
+.browsealoud > * {
+    float: right;
+    margin-right: 10px;
+}
+
+.afclogo {
+    margin: 120px 0 0 620px;
+    position: absolute;
+    white-space: normal;
+    z-index: 0;
+}
+
+.image-box {
+    background-color: $theme-color;
+    margin-bottom: $base-font-size;
+    border: thick solid $theme-color;
+    a {
+        @extend .h3;
+        @extend %inverted;
+    }
+}
+
+.image-box-fostering {
+    @extend .image-box;
+}
+

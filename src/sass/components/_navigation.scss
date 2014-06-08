@@ -1,0 +1,143 @@
+a {
+    color: $theme-color;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+}
+
+.residents,
+.business,
+.council,
+.visitors {
+    @include font-size(16px, 40px);
+    background-color: $black;
+    color: $white;
+    min-width: 136px;
+    text-align: center;
+    a {
+        padding: 0 $base-font-size;
+        color: inherit;
+        &:after {
+            content: '\00a0\2193';
+            font-weight: 400;
+        }
+        &:before {
+            content: 'for\00a0';
+            font-weight: 400;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        &:visisted {
+            color: $white;
+        }
+    }
+    &.current {
+        background-color: $white;
+        color: $dark-grey;
+    }
+    &:hover {
+        @extend %inverted;
+    }
+}
+
+.council {
+    a:before { content: 'your\00a0'; }
+}
+
+.breadcrumbs {
+    margin: $base-font-size 0;
+}
+
+.mainnav {
+    margin-bottom: $base-font-size*2;
+    h3 a, &__header {
+        color: $black;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        display: inline;
+        list-style: none;
+        &:after {
+            content: '\00a0\007C ';
+        }
+        &:last-child:after {
+            content: '';
+        }
+    }
+}
+
+.atoz {
+    text-transform: uppercase;
+    background-color: $black;
+    color: $white;
+    margin-top: $base-font-size;
+    .title {
+        display: none;
+    }
+    ul {
+        @extend .clearfix;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+    li {
+        display: inherit;
+        display: inline-block;
+        width: $base-font-size * 2;
+        list-style: none;
+        margin-bottom: 0;
+        &:hover {
+            @extend %inverted;
+        }
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            margin: $base-font-size / 2;
+        }
+    }
+    a {
+        @include font-size($h3-font-size);
+        color: $white;
+        padding: $base-font-size / 4;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.contact-details {
+    @include font-size(10px);
+    border-left: 1px solid $white;
+    margin: 0;
+    margin-top: $base-font-size / 2;
+    @media screen and (max-width: $breakpoint-tablet - 1px) {
+        text-align: center;
+        padding-top: $base-font-size;
+        border: none;
+    }
+    p {
+        margin: 0;
+        padding-left: $base-font-size / 2;
+        @media screen and (max-width: $breakpoint-tablet - 1px) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.social-links {
+    text-align: right;
+    float: right;
+    margin-top: $base-font-size;
+    &:after { @extend .clearfix; }
+    img {
+        display: inline-block;
+        margin-right: $base-font-size / 2;
+        width: auto;
+    }
+    a:hover { text-decoration: none;}
+    @media screen and (max-width: $breakpoint-tablet - 1px) {
+        text-align: center;
+        margin: $base-font-size 0;
+    }
+}

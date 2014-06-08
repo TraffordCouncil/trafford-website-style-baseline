@@ -1,25 +1,25 @@
 {
   "name": "trafford-style-baseline",
-  "version": "0.0.0",
-  "description": "Trafford styling baseline",
+  "version": "0.1.0",
+  "description": "Trafford Council website style baseline",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "css",
     "html",
-    "less",
-    "sass"
+    "sass",
+    "scss"
   ],
-  "author": "Jeremy Page",
-  "license": "ISC",
+  "author": "Jeremy Page <jeremy.page@trafford.gov.uk>",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://jeremypage@bitbucket.org/jeremypage/trafford-style-baseline.git"
+    "url": "https://github.com/TraffordCouncil/trafford-website-style-baseline.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-sass": "^0.7.3"
   }
 }
