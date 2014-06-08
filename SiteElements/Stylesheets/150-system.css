@@ -1,0 +1,845 @@
+﻿
+/*DEFAULT CONTENSIS STYLES
+
+* {
+outline: 0;
+}
+.floatright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.floatleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.floatimageright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.floatimageleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.sys_clear{
+    clear:both;   
+}
+
+html,body{
+    margin:0;
+    padding:0;
+	background:#F9F9F9;
+    
+}
+input{ font-family: Verdana, Geneva, sans-serif; }
+body{
+	font-size: 0.75em;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 1;
+}
+ul, p{
+	margin:0 0 8px 0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	color:#0063B9;
+
+}
+a:hover{
+	text-decoration:underline;
+ color:#0063B9;
+}
+img{
+	border:0;
+}
+.sys_box{
+	margin:10px 0;
+	float:left;
+}
+.sys_box .sys_box-header{
+	background:url('/SiteElements/Images/boxHeader.jpg');
+	width:191px;
+	height:28px;
+	float:left;
+	clear:both;
+	padding:12px 0 0 14px;
+	color:#666;
+	font-size:1.3em;
+	font-weight:bold;
+}
+.sys_box .sys_box-contents{
+	border:1px solid #CCCCCC;
+	float:left;
+	width:203px;
+	clear:both;
+}
+
+#Container{
+
+}
+.sys_wrapper{
+	margin:0 auto;
+	width:960px;
+}
+
+.sys_top{
+	float:left;
+	width:100%;
+	clear:both;
+    min-width:980px;
+}
+#Header #TopMenu{
+	background:#00264b;
+	border-bottom:none;
+	height:29px;
+}
+#Header #TopMenu li{
+	padding:0 12px;
+	list-style:none;
+	float:left;
+	border-left:1px solid #999;
+}
+#Header #TopMenu li.sys_first{
+	padding-left:0;
+	border:0;
+}
+#Header #TopMenu div.sys_wrapper{
+	padding:8px 0 0 0;
+}
+#Header #TopMenu a, #Header #TopMenu span{
+	color:#ffffff;
+	font-size:0.9em;
+}
+#Header #TopMenu a.sys_listen-link{
+	float:left;
+	background:url('/SiteElements/Images/listen.png') no-repeat 35px 0;
+	width:55px;
+	padding:2px 0 0 0;
+	height:15px;
+}
+#Header #TopMenu span.sys_textresize{
+	float:left;
+	height:15px;
+	padding:2px 0 0 0;
+	margin:0 6px 0 14px;
+}
+#Header #TopMenu .sys_textresize-decrease a,
+#Header #TopMenu .sys_textresize-reset a,
+#Header #TopMenu .sys_textresize-increase a{
+	float:left;
+	width:16px;
+	height:15px;
+	margin:0 2px;
+}
+#Header #TopMenu .sys_textresize-decrease a:hover,
+#Header #TopMenu .sys_textresize-reset a:hover,
+#Header #TopMenu .sys_textresize-increase a:hover{
+	text-decoration:none;
+}
+#Header #TopMenu .sys_textresize-decrease a{
+	background:url('/SiteElements/Images/textResizeDown.png') top right no-repeat;
+	margin-top:-3px;
+}
+#Header #TopMenu .sys_textresize-reset a{
+	background:url('/SiteElements/Images/textResizeReset.png') top right no-repeat;
+	margin-top:-3px;
+}
+#Header #TopMenu .sys_textresize-increase a{
+	background:url('/SiteElements/Images/textResizeUp.png') top right no-repeat;
+	margin-top:-3px;
+}
+#Header #TopMenu .sys_headeroptions{
+	float:right;
+}
+/*ul li{
+	list-style:none;
+	float:left;
+	border-left:1px solid #33AACC;
+}
+ul li.sys_first{ border:0; }
+#Header #LogoSearch{
+	background:#005db9;
+	border-bottom:1px solid #ccc;
+	height:100px;
+}
+#Header #LogoSearch .sys_logo{
+	float:left;
+}
+#Header #LogoSearch .sys_mobile-logo{
+	display:none;
+}
+	#SearchMobile,
+	#ButtonMenuMobile{
+		display:none;
+	}
+	
+#Header #LogoSearch .sys_searchcontainer{
+	float:right;
+	width:860px;
+	padding:20px 0 0 0;
+}
+#Header #LogoSearch div.sys_search-query-control{
+	background:url('/SiteElements/Images/searchBg.png') no-repeat top right;
+	width:430px;
+	height:31px;
+	padding-bottom:3px;
+	float:right;
+	margin-bottom:19px;
+	padding-left:350px;
+}
+.sys_search-query-control input.sys_searchbox{
+	width:170px;
+	height:12px;
+	background:none;
+	border:0;
+	float:left;
+	padding:8px 0 10px 11px;
+	color:#666666;
+	font-size:1em;
+ background-color:#fff;
+}
+.sys_search-query-control input.sys_search-button{
+	float:right;
+	margin:0px 0px 0px 0;
+	height:30px;
+	width:30px;
+	border:0;
+	background:url('/SiteElements/Images/TraffordSearchButton.gif') no-repeat;
+    line-height:0;
+    font-size:0;
+    text-indent:-9999px;
+}
+.sys_search-query-control label{
+    display:none;   
+}
+#Header #LogoSearch .sys_atoz {
+	float:right;
+	font-size:1.1em;
+	min-width:731px;
+}
+#Header #LogoSearch .sys_atoz span.sys_atoz-text{
+	color:#ffffff;
+	float:left;
+}
+#Header #LogoSearch .sys_atoz ul{
+	float:right;
+}
+#Header #LogoSearch .sys_atoz ul li{
+	list-style:none;
+	float:left;
+	border-left:1px solid #999;
+}
+#Header #LogoSearch .sys_atoz ul li a{
+	color:#ffffff;
+	text-decoration:none;
+	padding:0 7px;
+	font-weight:bold;
+}
+#Header #LogoSearch .sys_atoz ul li a:hover{
+    text-decoration:none; 
+  		color:red;
+  		
+}
+#Header #LogoSearch img{
+	padding:9px 0 6px 0;
+}
+#Header #MainMenu{
+	background:#EEEEEE;
+	border-bottom:1px solid #CCCCCC;
+	height:39px;
+}
+#Header #MainMenu ul li{
+	padding:0 17px 0 16px;
+	list-style:none;
+	float:left;
+	border-left:1px solid #999;
+	margin:15px 0 0 0;
+	font-size:1.15em;
+}
+#Header #MainMenu ul li.sys_first{
+	padding-left:3px;
+	border:0;
+}
+#Header #MainMenu div.sys_toptasks{
+	float:right;
+	background:url('/SiteElements/Images/topTasksBg.png');
+	width:104px;
+	height:29px;
+	margin-top:5px;
+	color:#ffffff;
+}
+#Header #MainMenu div.sys_toptasks a{
+    display:block;
+	border:0;
+	padding:7px 0 7px 10px;
+	margin:0;
+	font-size:1.2em;
+	color:#ffffff;
+    background:url('/SiteElements/Images/topTasksDownArrow.png') no-repeat 83px 13px;
+}
+#Header #MainMenu div.sys_toptasks a.sys_toptasks-open{
+    background:url('/SiteElements/Images/topTasksUpArrow.png') no-repeat 83px 12px;
+}
+#Body{
+	margin-bottom:14px;
+}
+#Body .sys_wrapper{
+	margin-top:26px;
+}
+
+#Body #Content{
+	float:right;
+	width:725px;
+}
+
+#Body #Content h1{
+	color:#333333;
+	/*border-bottom:1px dotted #999999;
+	float:left;
+	padding-bottom:0;
+	margin-bottom:0;
+	font-size:1.7em;
+	font-weight:normal;
+}
+
+
+
+#Body #Content div.sys_icons{
+	float:right;
+	padding:14px 0 0 0;
+}
+#Body #Content div.sys_icons a, #Body #Content div.sys_icons .sys_syndicationlinks-control{
+	padding:0 5px;
+	float:left;
+    text-decoration:none;
+}
+
+#Body #Content div.sys_icons .sys_syndicationlinks-control a{
+	display: block;
+	background: url('/SiteElements/Images/RSSIcon.gif') no-repeat;
+	width:6px;
+	height:16px;
+	text-indent: -999em;
+}
+
+
+
+#Footer #MainFooter p.sys_footerHeading
+{ font-size:1.2em; }
+#Footer #MainFooter ul{  }
+#Footer #MainFooter li{
+	padding:5px 0 3px 7px;
+	list-style:none;
+	background:url('/SiteElements/Images/footerBullet.gif') no-repeat left center;
+	margin-left:3px;
+}
+#Footer #MainFooter{
+	border-top:1px solid #ccc;
+	background:#efefef;
+	clear:both;
+	height:151px;
+	padding:28px 0 0 0;
+	margin-top:0;
+}
+#Footer #MainFooter p.sys_footerHeading{
+	margin:0 0 8px !important;
+	font-size:1.25em;
+}
+#Footer #MainFooter div.sys_footerFindus p{
+	margin:5px 0 6px;
+}
+#Footer #MainFooter a, #Footer #MainFooter{
+	color:#444;
+}
+#Footer #MainFooter .sys_footerTranslations li{
+	float:left;
+	width:80px;
+}
+#Footer #MainFooter .sys_footerTranslations li.sys_seealllanguages{
+	width:100px;
+}
+#Footer #MainFooter .sys_footerHeading li{
+	list-style:none;
+}
+#Footer #MainFooter .sys_footerSocialNetworks li{
+	padding:7px 0 8px 25px;
+	font-size:0.9em;
+	margin:0;
+}
+#Footer #MainFooter .sys_footerSocialNetworks li.sys_footerFacebookLink{
+	background:url('/SiteElements/Images/facebookIcon.gif') no-repeat left center;
+}
+#Footer #MainFooter .sys_footerSocialNetworks li.sys_footerTwitterLink{
+	background:url('/SiteElements/Images/twitterIcon.gif') no-repeat left center;
+}
+#Footer #MainFooter .sys_footerSocialNetworks li.sys_footerFlickrLink{
+	background:url('/SiteElements/Images/flickrIcon.gif') no-repeat left center;
+}
+#Footer #MainFooter .sys_footerSocialNetworks li.sys_footerYoutubeLink{
+	background:url('/SiteElements/Images/youtubeIcon.gif') no-repeat left center;
+}
+#Footer #MainFooter .sys_footerFindus div.sys_contactdetails{
+	padding:0;
+	padding-top:4px;
+}
+#Footer #MainFooter .sys_footerFindus div.sys_contactdetails p{
+	font-size:1em;
+	line-height:1.7em;
+}
+#Footer #MainFooter .sys_footerFindus div.sys_contactdetails strong{
+	font-size:1em;
+}
+#Footer #MainFooter .sys_footerContact .sys_footerHeading{
+	margin-bottom:4px !important;
+}
+#Footer #MainFooter .sys_footerContact{
+	line-height:1.6em;
+}
+#Footer #MainFooter li{
+	color:#A2CFEE;
+}
+#Footer #MainFooter .sys_wrapper div{
+	float:left;
+	width:220px;
+	padding:0 14px;
+}
+#Footer #MainFooter .sys_wrapper div.sys_footerTranslations{
+		padding-left:0;
+}
+#Footer #MainFooter .sys_wrapper div.sys_footerSocialNetworks{
+	padding-left:25px;
+}
+#Footer #MainFooter .sys_wrapper div.sys_footerCouncil{
+	padding-left:0;
+}
+#Footer #MainFooter .sys_wrapper div.sys_footerFindus{
+	padding-left:0;
+}
+#Footer #MainFooter .sys_wrapper div.sys_footerContact{
+	padding-right:0;
+	padding-left:8px;
+	width:200px;
+}
+#Footer #MainFooter ul.sys_fullcontactdetails{
+	margin-top:25px;
+}
+#Footer #MainFooter ul.sys_fullcontactdetails li{
+	list-style-position:inside;
+	margin:0;
+	padding:0;
+}
+#Footer #MainFooter .sys_footerPhone{
+	padding:0 0 2px 0;
+}
+#Footer #MainFooter .sys_footerPhone strong,
+#Footer #MainFooter .sys_footerEmail strong{
+	font-size:1.1em;
+}
+#Footer #LinkFooter{
+	border-top:1px solid #999;
+	background:#ccc;
+	clear:both;
+	height:15px;
+	padding:11px 7px 7px 7px;
+	font-size:0.9em;
+}
+#Footer #LinkFooter ul{
+	float:left;
+}
+#Footer #LinkFooter ul li{
+	float:left;
+	list-style:none;
+	border-right:1px solid #666;
+	padding:0 16px;
+}
+#Footer #LinkFooter ul li.sys_first{
+	padding-left:0;
+}
+#Footer #LinkFooter ul li.sys_last{
+	padding-right:0;
+	border:0;
+}
+#Footer #LinkFooter ul li.sys_mobilelink-gotodesktop,
+#Footer #LinkFooter ul li.sys_mobilelink-gotomobile{
+	display:none;
+}
+#Footer #LinkFooter ul li, #Footer #LinkFooter ul li a{
+	color:#444;
+}
+#Footer #LinkFooter p.sys_contensis-credit{
+	float:right;
+	color:#444;
+}
+#Footer #LinkFooter p.sys_contensis-credit a{
+	color:#444;
+	text-decoration:underline;
+}
+#Footer #LinkFooter p.sys_contensis-credit a:hover{
+	text-decoration:none;
+}
+#Body #Sidebar{
+	float:left;
+	width:205px;
+}
+#Body #Sidebar .sys_twitterfeed{
+		margin:0 0 36px;
+}
+#Body #Sidebar .sys_twitterfeed .sys_box-contents{
+	padding:16px 16px 17px 16px;
+	width:171px;
+	font-size:1em;
+}
+#Body #Sidebar .sys_twitterfeed .sys_box-contents p{
+	line-height:1.6em;
+}
+
+#Body #Sidebar .sys_twitterfeed .sys_box-contents p a{
+	color: #000;
+	text-decoration: none
+}
+#Body #Sidebar .sys_twitterfeed .sys_twitter_info{
+	font-size:0.9em;
+	color:#999999;
+	padding:2px 0 0 0;
+	display: block;
+}
+.sys_hiddenlabel{
+	display:none;
+}
+/* CSS Styles used on all pages but the homepage (sidebarb) 
+
+#Body #Sidebar li{ list-style:none; }
+#Body #Sidebar .sys_doughnutbox li{
+	list-style:none;
+	background:url('/SiteElements/Images/largePictureBoxBullet.gif') no-repeat left center;
+	color:#207DB8;
+
+	font-size:1em;
+	padding-left:10px;
+	margin-left:8px;
+}
+/* Doughnut Boxes 
+.sys_doughnutbox{ 
+	clear:both; 
+	margin:0 0 20px;
+}
+.sys_doughnutbox .sys_doughnutbox-header{
+	height:36px;
+	width:154px;
+	padding:28px 0 0 51px;
+	font-size:120%;
+	font-weight:bold;
+	color:#666;
+}
+.sys_doughnutbox .sys_doughnutbox-body{
+	padding:4px 8px 2px;
+}
+.sys_doughnutbox .sys_doughnutbox-body ul li{
+	padding:5px 0;
+}
+.sys_doughnutbox .sys_doughnutbox-footer{
+	height:7px;
+	width:205px;
+}
+#Body #Sidebar .sys_doughnutbox ul{ float: none; }
+.sys_reportit-doughnutbox .sys_doughnutbox-header{
+	background:url('/SiteElements/Images/reportOnline-Header.gif') no-repeat top left;
+}
+.sys_reportit-doughnutbox .sys_doughnutbox-body{
+	background:url('/SiteElements/Images/Online-Body.gif') repeat-y top left;
+}
+
+.sys_reportit-doughnutbox .sys_doughnutbox-footer{
+	background:url('/SiteElements/Images/Online-Footer.gif') no-repeat bottom left;
+}
+
+.sys_requestit-doughnutbox .sys_doughnutbox-header{
+	background:url('/SiteElements/Images/requestOnline-Header.gif') no-repeat top left;
+	height:33px;
+}
+.sys_requestit-doughnutbox .sys_doughnutbox-body{
+	background:url('/SiteElements/Images/Online-Body.gif') repeat-y top left;
+}
+.sys_requestit-doughnutbox .sys_doughnutbox-footer{
+	background:url('/SiteElements/Images/Online-Footer.gif') no-repeat bottom left;
+}
+
+.sys_payit-doughnutbox .sys_doughnutbox-header{
+	background:url('/SiteElements/Images/payOnline-Header.gif') no-repeat top left;
+	height:35px;
+}
+.sys_payit-doughnutbox .sys_doughnutbox-body{
+	background:url('/SiteElements/Images/Online-Body.gif') repeat-y top left;
+}
+.sys_payit-doughnutbox .sys_doughnutbox-footer{
+	background:url('/SiteElements/Images/Online-Footer.gif') no-repeat bottom left;
+}
+/* End Doughnut Boxes 
+
+.sys_breadcrumbs{
+	color:#343434;
+    font-size:1em;
+	padding-top:3px;
+	padding-bottom:6px;
+}
+.sys_pagedetails{
+	color:#999999;
+	clear:both;
+	float:left;
+	width:100%;
+	font-size:0.9em;
+}
+.sys_pagedetails .sys_pagedetails-lastmodified{
+	float:left;
+}
+.sys_pagedetails .sys_pagedetails-share{
+	float:right;
+}
+#Content h2{ 
+	clear:both;
+	float:left; 
+	font-size:1.25em;	
+	border-bottom:1px dotted #999999;
+	width:100%;
+	padding-bottom:9px;
+	padding-left:1px;
+    color:#333333;
+}
+#Body #Content div.sys_pagefooter{
+	border-top:1px dotted #999999;
+	padding-top:6px;
+	padding-bottom:38px;
+	font-size:0.9em;
+    clear:both;
+}
+#Body #Content div.sys_pagefooter .sys_reportpage{
+	float:left;
+}
+#Body #Content div.sys_pagefooter .sys_backtotop{
+	float:right;
+	background:url('/SiteElements/Images/backToTopArrow.png') center left no-repeat;
+	padding-left:9px;
+}
+#Body #Content div.sys_pagefooter .sys_backtotop{
+	color:#999999;
+}
+
+/* Dropdown control 
+.selectBox-dropdown {
+    width: 200px !important;
+    height:25px;
+    padding:3px 0 0 5px;
+	position: relative;
+	/*border: solid 1px #BBB;
+	line-height: 1.5;
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+	outline: none;
+	vertical-align: middle;
+    background: url('/SiteElements/Images/sectionChooserBg.gif') no-repeat right;
+	display: inline-block;
+	cursor: default;
+}
+
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow {
+	border-color: #666;
+}
+
+.selectBox-dropdown.selectBox-menuShowing {
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.selectBox-dropdown .selectBox-label {
+	padding: 2px 8px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 23px;
+	height: 100%;
+	background: url(jquery.selectBox-arrow.gif) 50% center no-repeat;
+}
+
+
+/* Dropdown menu 
+.selectBox-dropdown-menu {
+	position: absolute;
+	z-index: 99999;
+	max-height: 200px;
+	min-height: 1em;
+	border: solid 1px #BBB; /* should be the same border width as .selectBox-dropdown 
+	background: #FFF;
+	-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	overflow: auto;
+}
+
+
+/* Inline control 
+.selectBox-inline {
+	min-width: 150px;
+	outline: none;
+	border: solid 1px #BBB;
+	background: #FFF;
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: auto;
+}
+
+.selectBox-inline:focus {
+	border-color: #666;
+}
+
+
+/* Options 
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+}
+
+.selectBox-options LI A {
+	line-height: 1.5;
+	padding: 0 .5em;
+	white-space: nowrap;
+	overflow: hidden;
+	background: 6px center no-repeat;
+}
+
+.selectBox-options LI.selectBox-hover A {
+	background-color: #EEE;
+}
+
+.selectBox-options LI.selectBox-disabled A {
+	color: #888;
+	background-color: transparent;
+}
+
+.selectBox-options LI.selectBox-selected A {
+	background-color: #C8DEF4;
+}
+
+.selectBox-options .selectBox-optgroup {
+	color: #666;
+	background: #EEE;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 0 .3em;
+	white-space: nowrap;
+}
+
+
+/* Disabled state 
+.selectBox.selectBox-disabled {
+	color: #888 !important;
+}
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+	opacity: .5;
+	filter: alpha(opacity=50);
+	border-color: #666;
+}
+
+.selectBox-inline.selectBox-disabled {
+	color: #888 !important;
+}
+
+.selectBox-inline.selectBox-disabled .selectBox-options A {
+	background-color: transparent !important;
+}
+.selectbox-container label{
+    display:none;
+}
+h1 span.sys_icons{
+	float:right;
+}
+div.sys_pagedetails{
+	padding-bottom:14px;
+	border-top:1px dotted #999999;
+	padding-top:12px;
+	margin-top:8px;
+}
+div.sys_pagefooter{
+	margin-top:18px;
+}
+
+/* Top Tasks Dropdown */
+/*.sys_toptasks .selectBox-dropdown{
+    width:102px !important;
+    height:28px !important;
+    padding:1px 0 0 2px;
+    background:url('/SiteElements/Images/toptasks.gif');
+    color:#ffffff;
+    font-size:120%;
+}
+.sys_toptasks li a{
+    padding:10px;
+    font-size:120%;
+    min-width:82px;
+}
+.sys_toptasks.selectBox-dropdown-menu{
+    width:auto !important;   
+}*/
+
+/* Top Tasks Menu 
+#TopTasksMenu{
+    background:#333333;
+    color:#00ABDB;
+    padding:15px 0;
+    display:none;
+}
+#TopTasksMenu li{
+    list-style:inside;
+    padding:5px 0;
+}
+#TopTasksMenu a{
+    color:#EEEEEE;
+}
+#TopTasksMenu .sys_wrapper div{
+    float:left;
+    width:310px;
+}
+#TopTasksMenu .sys_wrapper{
+    padding:0 10px 0 0;
+    width:940px;
+}
+/* PDF Link 
+.sys_pdflink{
+    background: url('/SiteElements/Images/docIcon.gif') no-repeat center;   
+    line-height:0;
+    font-size:0;
+    text-indent:-9999px;
+    width:12px;
+    height:16px;
+}
+.sys_emailLink{
+    display: inline-block;
+    width: 28px;
+    padding-top: 2px;
+    height:14px;
+    float: left;
+}
+
+*/

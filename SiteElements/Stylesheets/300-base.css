@@ -1,0 +1,857 @@
+﻿/* Lazy css import. But at least I don't have to reassign stylesheets to every template - JP*/
+@import url('350-cookie-consent.css');
+
+/* Default syling for all links */
+a { text-decoration:none; color:#0089B0; }
+a:hover { text-decoration:underline; }
+
+/* Attempt to fix 1st bullet point on chrome and IE browsers */
+.bodycontent li {
+    clear:left;
+}
+
+.bodycontent .sys_cms-form-control ul.sys_cms-form-body {
+  
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.bodycontent .sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item {
+  
+   margin: 0 0 5px 0;
+  padding: 0;
+}
+
+
+.bodycontent .sys_theme-simple .sys_imageslideshowgallery-control .sys_imageslideshownav-control {display:none; width:}
+
+.bodycontent .sys_theme-simple .sys_imageslideshowgallery-control .sys_imageslideshowgallery-container {background:#fff;}
+
+.bodycontent .sys_theme-simple .sys_imageslideshowgallery-control .sys_imageslideshowgallery-title, .sys_theme-simple .sys_imageslideshowgallery-control .sys_imageslideshowgallery-caption {display:none;}
+.bodycontent .sys_theme-simple a.sys_imagegallery-prev, .sys_theme-simple a.sys_imagegallery-next {display:none;}
+
+.bodycontent .sys_theme-simple a.sys_imagegallery-next {display:none;}
+.bodycontent .sys_theme-simple .sys_imageslideshowgallery-control {width:auto;} 
+
+.hide {display:none;}
+
+.links
+{
+    min-height:2em;
+    padding-top:6px;
+}
+
+
+.glossary dt {
+  border-top:1px dashed #999999;  
+  float: left;
+    clear: left;
+    width: 250px;
+   padding: .5em 0 0 0;
+    font-weight: bold;
+  
+  }
+.glossary  dt:after {
+    content: ":";
+  }
+.glossary  dd {
+  border-top:1px dashed #999999;   
+  margin: 0 0 0 250px;
+    padding: .5em 0 2em 0;
+  }
+
+
+.footer { margin-top:1em; }
+
+.headerinner
+{
+    background-color:#0089B0;
+    height:132px;
+}
+
+.footerinner, .footerinner a
+{
+	color:#fff;
+	text-decoration:none;
+	line-height:1.5em;
+}
+
+.bodycontent .relatedpages ul li
+{
+	list-style:none outside none;
+}
+
+.relatedpages li a, .relateddocuments li a, .externallinks li a {line-height:1.2em;}
+
+.bodycontent .contactus ul li
+{
+	list-style:none outside none;
+	line-height:18px;
+	font-size: 1em;
+}
+
+.bodycontent .mainnav ul
+{
+	font-size:1em;
+	letter-spacing:-.02em;
+	margin:0;
+}
+
+.footer .links
+{
+	background-color:#0089B0;
+	font-size:.85em;
+	text-align:center;
+}
+
+.footer .link ul
+{
+	width:80%;
+	display:block;
+	margin:auto;
+}
+
+.footer .links li { display:inline-block; }
+
+.footer .links li:before { content:'\00a0\|\00a0'; }
+
+.footer .other-links { margin-top:12px; }
+
+.footer .other-links img
+{
+	display:inline;
+	float:right;
+	height:auto;
+	width:auto;
+	padding-right:6px;
+	margin:6px;
+}
+
+.footer .contact-details
+{
+	border-left:1px solid #fff;
+	margin-top:12px;
+	font-size:.85em;
+	padding-left:12px;
+}
+
+.news h3, 
+.whats-on h3, 
+.rate-page h3, 
+.apply h3, 
+.book h3, 
+.pay h3, 
+.report h3, 
+.say h3,
+.sys_add-your-comment .sys_addcomments-title
+{
+	font-size:1.5em;
+	height:32px;
+	background-color:#0089B0;
+	color:#fff;
+	font-weight:700;
+	padding:6px 0 0 8px;
+}
+
+/* Hide sys_addcomments-title for now, but try to use styling declared elsewhere */
+/*.sys_addcomments-title {height:0;display:none;}*/
+
+.transactional-text { font-size:.85em; }
+
+.link-more {
+    color: #0089B0;
+    font-size: 1em;
+  		font-weight:bold;
+  		line-height:2em;
+}
+
+.atoz
+{
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:1.5em;
+}
+
+.atoz li
+{
+	font-weight:700;
+	min-width:2.2%;
+	display:inline-block;
+	padding:7px 2px;
+}
+
+.residents, .business, .council, .visitors
+{
+	text-align:left;
+  min-width:136px;
+	padding:16px 0 12px 0px;
+}
+
+.residents:after, .business:after, .council:after, .visitors:after { content:'\00a0\2193\00a0'; }
+
+.search
+{
+	font-size:1.05em;
+	color:#666;
+	background-color:#fff;
+	margin:auto 1em auto 3em;
+	height:24px;
+	font-family:Arial, Helvetica, sans-serif;
+    padding: 0 0 6px;
+}
+
+#Header #LogoSearch div.sys_search-query-control
+{
+	background:url(/SiteElements/Images/searchBg.png) no-repeat top right;
+	width:430px;
+	height:31px;
+	padding-bottom:3px;
+	float:right;
+	margin-bottom:19px;
+	padding-left:350px;
+}
+
+.sys_search-query-control input.sys_searchbox
+{
+	width:170px;
+	height:12px;
+	background:none;
+	border:0;
+	float:left;
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.85em;
+	line-spacing:1.2em;
+	padding:10px 0 10px 11px;
+}
+
+.sys_search-query-control input.sys_search-button
+{
+	float:right;
+	height:30px;
+	width:30px;
+	border:0;
+	background:url(/SiteElements/Images/TraffordSearchButton-Cropped-30x30.gif) no-repeat;
+	line-height:0;
+	font-size:0;
+	text-indent:-9999px;
+	margin:0;
+}
+
+.socialmedia
+{
+	font-size:.55em;
+	text-align:center;
+	color:#fff;
+	padding:20px 5px 5px 5px;
+  
+}
+
+
+.brand { max-height:30px; overflow:hidden; margin-top:60px;}
+
+
+
+.brand:hover img {margin-top:-66px;overflow:hidden;}
+
+
+.header .logo { vertical-align:middle; height:132px; }
+
+.main-search { background-color: #0089B0; margin-top:60px; }
+
+.socialmedia ul li { display:inline; }
+
+.socialmedia ul li:after { content:'\00a0'; }
+
+.navbar
+{
+	color:#fff;
+	background-color:#000;
+	min-height:30px;
+}
+
+.intersitenav a
+{
+	font-size:1.05em;
+	text-decoration:none;
+	color:#0089B0;
+}
+
+.image img
+{
+	height:auto;
+	width:100%;
+}
+
+.image
+{
+	position:relative;
+	width:100%;
+	margin:0 0 12px;
+}
+
+.caption
+{
+	vertical-align:bottom;
+	position:absolute;
+	text-align:right;
+	bottom:2px;
+	right:0;
+	left:0;
+	color:#fff;
+	background:rgba(0, 0, 0, 0.5);
+	padding:6px 6px 6px 3px;
+}
+
+.news, .whats-on { margin-bottom:6px; }
+
+.localtoyou
+{
+	color:#fff;
+	background-color:#000;
+	margin-bottom:12px;
+	padding:6px;
+}
+
+.localtoyou h3
+{
+	color:#fff;
+	background-color:#000;
+	padding:0 0 0 2px;
+}
+
+
+
+.breadcrumbs
+{
+	line-height:20px;
+	font-size:12pt;
+  padding-top:12px;
+}
+
+.shareprintpdf
+{
+	line-height:20px;
+	font-size:12pt;
+	margin-bottom:6px;
+	text-align:right;
+}
+
+.bodycontent p, .bodycontent dl
+{
+	font-size:14pt;
+	line-height:18pt;
+	padding-bottom:12px;
+}
+
+.bodycontent h1
+{
+	font-size:24pt;
+ line-height:40px;
+	font-weight:700;
+	padding:12pt 0 0;
+}
+
+.bodycontent h2
+{
+	font-size:18pt;
+	font-weight:700;
+	padding:6pt 0;
+ line-height: 22pt;
+}
+
+.bodycontent h3
+{
+	font-size:16pt;
+	font-weight:700;
+	padding:6pt 0;
+}
+
+.bodycontent h4
+{
+	font-size:14pt;
+	font-weight:700;
+	padding:6pt 0;
+}
+
+.bodycontent ul
+{
+	font-size:1.1em;
+	margin:0 0 0 30px;
+	padding:0;
+}
+
+.bodycontent ul li
+{
+	list-style:disc outside;
+	line-height:18pt;
+	padding-bottom:12px;
+	margin-left:0;
+	padding-left:0;
+}
+
+.bodycontent table
+{
+	width:100%;
+	border-spacing:2px;
+	margin:30px 0;
+}
+
+.contactus ul li, .relateddocuments ul li, .relatedpages ul li { list-style:none; }
+
+.bodycontent table th
+{
+	background:none repeat scroll 0 0 #0089B0;
+	color:#FFF;
+	font-weight:700;
+	text-align:left;
+	font-size:12pt;
+	height:44px;
+	vertical-align:middle;
+	padding:6px 6px 6px 12px;
+}
+
+.bodycontent table td
+{
+	background:none repeat scroll 0 0 #F2F2F2;
+	height:40px;
+		padding:12px 6px 6px 12px;
+  font-size:12pt;
+  line-height:16pt;
+  border-bottom: medium solid white;
+  
+}
+
+.bodycontent table th p
+{
+
+	
+  font-size:12pt;
+  line-height:16pt;
+  padding-bottom:0;
+ 
+}
+
+.bodycontent table td p
+{
+
+	
+  font-size:12pt;
+  line-height:16pt;
+ 
+}
+
+
+
+
+
+
+.mainnav
+{
+	
+	margin-bottom:20px;
+	
+}
+
+.mainnav h3
+{
+	font-size:1.5em;
+	font-weight:600;
+	color:#000;
+	line-height:28px;
+	padding:16px 0 0;
+}
+
+.mainnav h3 a
+{
+	color:#000;
+	text-decoration:none;
+}
+
+.mainnav ul li
+{
+	list-style:none outside none;
+	display:inline;
+	line-height:26px;
+	margin-bottom:10px;
+	padding:2px 0 0;
+}
+
+.mainnav ul li:after { content:'\00a0\007C\00a0'; }
+
+.aside-block
+{
+	margin-bottom:20px;
+	min-height:20px;
+	padding:9px;
+}
+
+.aside-block h2, .aside-block .sys_addcomments-title
+{
+	background-color:#0089B0;
+	color:#FFF;
+	margin:-9px -9px 10px;
+	padding:10px;
+
+}
+
+.aside-block h3
+{
+	background-color: #0089B0;
+    color: #FFFFFF;
+    margin: -9px -9px 10px;
+    padding: 10px;
+}
+
+.aside-block ol { list-style: none outside none; padding:0; margin:0;}
+
+.aside-block ol li {padding-bottom:12px;}
+
+.sys_addcomments-title {
+    background-color: #0089B0;
+    color: #FFF;
+    margin: -9px -9px 10px;
+    font-size: 18pt;
+    font-weight: 700;
+    padding: 6pt 0;
+}
+
+.sys_addcomments-row textarea {
+    width: 95%;
+}
+
+/* Do it task boxes */
+.do-it
+{
+	color:#fff;
+	box-sizing:border-box;
+ margin-top:16px;
+}
+
+.do-it > div {
+       float:left;
+       width:19%;
+       margin-left:1.25%;
+       background-color:#575756;
+       color:#fff;
+       background-position:10px top;
+       background-repeat:no-repeat;
+}
+
+.do-it > *:first-child
+{
+    overflow:hidden;
+	margin-left:0;
+}
+
+.do-it > div:hover {
+    background-color:#0089B0;
+}
+
+.do-it h3 { margin-top:70px; }
+
+.do-it a
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+.apply { background-image:url(/SiteElements/images/apply.png); }
+
+.book { background-image:url(/SiteElements/images/book.png); }
+
+.pay { background-image:url(/SiteElements/images/pay.png); }
+
+.report { background-image:url(/SiteElements/images/report.png); }
+
+.say { background-image:url(/SiteElements/images/say.png); }
+
+
+.do-it p {
+    font-size: 0.8em;
+    line-height: 1.3em;
+    padding: 8px;
+    background:#000;
+    min-height:4em;
+}
+
+/*.do-it li h3:after { content:'\00a0\25B6'; }*/
+
+/*
+.do-it li span {
+    background: none repeat scroll 0 0 #000000;
+    bottom: -8px;
+    display: block;
+    font-size: 0.6em;
+    font-weight: normal;
+    left: -8px;
+    line-height: 1.3em;
+    margin-top: 8px;
+    min-height: 4em;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+}
+*/
+
+.sys_news-datepublished, .sys_events-date
+{
+	font-size:.8em;
+	color:#575756;
+}
+
+.bodycontent .sys_subitem ul, .bodycontent .relateddocuments ul, .bodycontent .relatedpages ul, .bodycontent .externallinks ul, .bodycontent .contactus ul { margin:0; }
+
+.sys_subitem a:hover, 
+.footer .links a:hover, 
+.news p a:hover, 
+.whats-on p a:hover, 
+.atoz a:hover, 
+.socialmedia a:hover, 
+.breadcrumbs a:hover, 
+.shareprintpdf a:hover, 
+.bodycontent a:hover, 
+.mainnav a:hover, 
+.mainnav h3 a:hover { text-decoration:underline; }
+
+/* Why is this needed? */
+/*.sys_first a, .bluetext { color:#0089B0; }*/
+
+.header, .footer, .atoz ul, .localtoyou .aside-block { background-color:#000; }
+
+.relateddocuments, .relatedpages, .externallinks, .contactus, .feedback { background-color:#F2F2F2; }
+
+.bodycontent .relateddocuments ul li, .bodycontent .externallinks ul li
+{
+	list-style:none outside none;
+	/*line-height:16px;*/
+}
+
+.footer .links a, .intersitenav a:hover
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+.footer .links :first-child:before, .mainnav ul :last-child:after { content:''; }
+
+.atoz a, .socialmedia a
+{
+	text-decoration:none;
+	color:#fff;
+}
+
+.search label, .sys_search-query-control label, .bodycontent table caption { display:none; }
+
+
+
+
+.strongtext, .strongtextgrey { font-weight:700; }
+
+.navbar a, .navbar a:visited, .residenthome .residents a:hover, .businesshome .business a:hover, .councilhome .council a:hover , .visitorshome .visitors a:hover { color:#fff; }
+
+.intersitenav .residents:hover, .intersitenav .business:hover, .intersitenav .council:hover, .intersitenav .visitors:hover
+{
+	background-color:#0089B0;
+	color:#fff;
+}
+
+.residenthome .residents, .businesshome .business, .councilhome .council, .visitorshome .visitors
+{
+	background-color:#fff;
+	color:#575756;
+}
+
+.residenthome .residents a, .businesshome .business a, .councilhome .council a, .visitorshome .visitors a { color:#575756; }
+
+.breadcrumbs a, .shareprintpdf a, .bodycontent a, .mainnav a
+{
+	color:#0089B0;
+	text-decoration:none;
+}
+
+.aside-block .sys_21 {
+
+	font-size:1.1em;
+	color:#0089B0;
+	text-decoration:none;
+
+}
+
+.aside-block .sys_0 {
+
+	font-size:1.1em;
+	color:#0089B0;
+	text-decoration:none;
+
+}
+
+.aside-block .sys_16 {
+
+	font-size:1.1em;
+	color:#0089B0;
+	text-decoration:none;
+
+}
+
+.site-map { margin:10px; }
+
+.watermark 
+{
+    color: gray;
+}
+
+/* Hide duplicate search results title - until a better fix can be found */
+.sys_search-title { display:none; }
+
+.sys_subitem {
+    border-bottom:1px solid #ecebeb;
+    padding:.5em 0;
+}
+
+dt.sys_search-description {
+    display:none;
+}
+
+.sys_search-url {
+    display:none;
+}
+
+dt.sys_search-description {
+    display:none;
+}
+
+dt.sys_search-url, dd.sys_search-url {
+    display:none;
+}
+
+.sys_paginginfo {
+    float:right;
+}
+
+.sys_navigationprevious.sys_disabled {
+    color:#ccc;
+}
+
+.sys_page {
+}
+
+.sys_page > a {
+    padding:0.2em 0.5em;
+    border:1px solid #ccc;
+}
+
+.sys_page > a:hover {
+    text-decoration:none;
+    background-color:#0089B0;
+    color:#fff; 
+}
+
+
+.aside-block li
+{
+line-height: 1.5em;
+font-size: 1.1em;
+}
+
+.sys_theme-simple .sys_events-control .sys_subitem .sys_events-summary dl dd.sys_events-location {
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-right: 0;
+    padding-top: 2px;
+}
+
+
+.sys_theme-simple .sys_events-control .sys_subitem .sys_events-summary dl dt.sys_events-location {
+    width: 85px !important;
+}
+
+.sys_theme-simple .sys_datarepeatercontrol .sys_subitem dl dt {
+    color: #333333;
+    float: left;
+    margin: 0;
+    min-height: 1.2em;
+    padding: 0;
+    position: relative;
+    width: 100px !important;
+}
+
+.sys_atoz-control {
+    min-height:4em;
+    border-bottom:1px solid rgb(236, 235, 235);
+    border-top:1px solid rgb(236, 235, 235);
+    margin-top:2em;
+}
+
+.sys_atoz-control ul li {
+    float:left;
+    list-style:none outside none;
+    width:1.6em;
+    margin:0 4px 0 0;
+    clear: none;
+}
+
+.sys_atoz-control > ul {
+    margin-left:0;
+}
+
+.sys_atoz-control-currentletter {
+    clear:both;
+    color:rgb(0, 137, 176);
+    font-size:2.6em;
+    font-weight:bold;
+    margin:0 0 15px;
+    padding:0 0 0 5px;
+}
+
+.sys_first.sys_0to9 {
+    width:2em;
+}
+
+dt.sys_generic_list-description {
+    display: none;
+}
+
+.news, .whats-on { margin-bottom:1em; }
+
+.news .sys_subitem > a, .whats-on .sys_subitem > a {
+    display: block;
+    margin-bottom:0.3em;
+    line-height:1.5em;
+}
+
+.footer-message{text-align:center;}
+
+.messagebox {border:#0089B0 thick solid;  color:#fff; background-color:#0089B0;padding:6px; line-height:24px;}
+
+.messagebox a {color:#fff;  text-decoration:underline;}
+
+.christmasmessagebox {background:url(/SiteElements/Images/snowflake-background.png) no-repeat; border:#0089B0 thick solid; padding:6px; color:#fff; background-color:#0089B0;}
+
+.christmasmessagebox a {color:#fff;  text-decoration:none;}
+
+.christmasmessagebox a:hover {color:#fff;  text-decoration:none;}
+
+ul.landingpage-list {
+    margin-left: 0;
+}
+
+ul.landingpage-list li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 30%;
+}
+
+.browsealoud > * {
+    float: right;
+    margin-right: 10px;
+}
+
+
+.header-overlay, .fwwlogo {display:none;}
+
+.afclogo { margin: 120px 0 0 620px; position: absolute; z-index: 0; white-space: normal;}
+
