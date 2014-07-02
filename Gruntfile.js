@@ -11,11 +11,6 @@ module.exports = function (grunt) {
                         src: ['*.scss'],
                         dest: 'dist/main/css',
                         ext: '.css'
-                    },
-                    {
-                        'dist/contensis-cms/SiteElements/Stylesheets/100-reset.css': 'src/sass/normalize.scss',
-                        'dist/contensis-cms/SiteElements/Stylesheets/200-skeleton.css': 'src/sass/skeleton.scss',
-                        'dist/contensis-cms/SiteElements/Stylesheets/300-base.css': 'src/sass/base.scss'
                     }]
             }
         },
@@ -31,25 +26,11 @@ module.exports = function (grunt) {
                         dest: 'dist/main/'
                     },
                     {
-                        // contensis dist content
-                        expand: true,
-                        cwd: 'src/',
-                        src: ['*.html'],
-                        dest: 'dist/contensis-cms/'
-                    },
-                    {
                         // main images
                         expand: true,
                         cwd: 'src/Images/',
                         src: ['**/*.png', '**/*.jpg', '**/*.gif'],
                         dest: 'dist/main/Images/'
-                    },
-                    {
-                        // contensis images
-                        expand: true,
-                        cwd: 'src/Images/',
-                        src: ['**/*.png', '**/*.jpg', '**/*.gif'],
-                        dest: 'dist/contensis-cms/SiteElements/Images/'
                     }
                 ]
             }
@@ -64,7 +45,7 @@ module.exports = function (grunt) {
                 ext: '.min.css'
             }
         }
-        
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
