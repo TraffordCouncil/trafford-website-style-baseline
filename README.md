@@ -15,22 +15,16 @@ The css output, and other pre-deployment tasks, are created using [Grunt](http:/
 Content
 -------
 
-### CSS
+### SRC
 
-This contains the post-compiled stylesheets. The contents of this folder should not be edited as any changes will be overwritten by future compilations.
+Development source files. Mainly template pages and Sass stylesheets.
 
-### HTML
+### DIST
 
-Sample HTML test pages from the Trafford Council website for testing styling.
+Disribution files: compiled css and JavaScript, and reformatted html template files.
+This folder is generated during compilation and output processing and so should not be edited directly as any changes will be overwritten.
 
-### Sass
+Current distibution outputs are:
 
-Main Sass files.
-
-### Images
-
-Standard images for use on pages and referenced by stylesheets.
-
-### SiteElements
-
-Compiled output for use in Contensis CMS. As this is compiled output, the contents from this folder should not edited.
+- Main. Standard html templates, css and JavaScript.
+- Contensis-cms. Similar to Main distribution, but css files are renamed to match Contensis naming convetions.
