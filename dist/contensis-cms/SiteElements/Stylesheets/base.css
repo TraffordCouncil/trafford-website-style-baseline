@@ -284,7 +284,7 @@ dt.sys_generic_list-description {
 
 #SearchQueryControl_SearchButton, #PostCodeControl_btnPostCodeSearch {
   float: left;
-  background: #ccc url(/src/Images/search-icon.png);
+  background: #ccc url(/SiteElements/Images/search-icon.png);
   border: 0;
   padding: 0;
   text-indent: -9999px;
@@ -550,7 +550,7 @@ sys_news-search-control sys_search-button {
     margin: 0; }
 
 .christmasmessagebox {
-  background: url(/src/Images/snowflake-background.png) no-repeat;
+  background: url(/SiteElements/Images/snowflake-background.png) no-repeat;
   border: #0089b0 thick solid; }
 
 .glossary dt {
@@ -658,19 +658,19 @@ sys_news-search-control sys_search-button {
         margin: 0 0 0 70px; } }
 
 .apply {
-  background-image: url(/src/images/apply.png); }
+  background-image: url(/SiteElements/images/apply.png); }
 
 .book {
-  background-image: url(/src/images/book.png); }
+  background-image: url(/SiteElements/images/book.png); }
 
 .pay {
-  background-image: url(/src/images/pay.png); }
+  background-image: url(/SiteElements/images/pay.png); }
 
 .report {
-  background-image: url(/src/images/report.png); }
+  background-image: url(/SiteElements/images/report.png); }
 
 .say {
-  background-image: url(/src/images/say.png); }
+  background-image: url(/SiteElements/images/say.png); }
 
 .strongtext {
   font-weight: 700; }

@@ -1,0 +1,24 @@
+// Buttons
+
+%search-button {
+    float: left;
+    background: $color_celeste_approx url(#{$assets-path}/Images/search-icon.png);
+    border: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: $base-font-size * 2;
+    height: $base-font-size * 2;
+    border-radius: 0 3px 3px 0;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+sys_news-search-control sys_search-button {
+    width: 120px;
+    text-indent: 0;
+}
+
+#SearchQueryControl_SearchButton, #PostCodeControl_btnPostCodeSearch {
+    @extend %search-button;
+}

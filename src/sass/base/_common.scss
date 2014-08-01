@@ -1,59 +1,42 @@
-// Common (non-content specific) classes
+// Classes
 
 .clearfix {
-  &:before, &:after {
-    content: '\0020';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-}
-
-
-// Placeholders (i.e. 'silent' classes)
-
-%body-table {
-    width: 100%;
-    caption { display: none; }
-    tr {
-        background-color: $pale-grey;
-        &:nth-of-type(even){
-            background-color: $very-pale-grey;
-        }
-    }
-    th,
-    td {
-        text-align: left;
-        vertical-align: middle;
-        padding: $base-font-size/2;
-        & >:nth-last-child(1) { margin-bottom: 0; }
-    }
-    th {
-        background-color: $theme-color;
-        color: $white;
-        font-weight: 700;
+    &:before, &:after {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
 }
 
-%inverted {
-    background-color: $theme-color;
-    color: $white;
+// Prepend images
+
+.add-icon-before:before {
+    content: "\271A";
 }
 
-%inverted-header {
-    @extend %inverted;
-    padding: $base-font-size/2;
+.edit-icon-before:before {
+    content: "\270E";
 }
 
-%related-links {
-    background-color: $pale-grey;
-    @include font-size($base-font-size,$base-font-size/2);
-    ul { margin: 0; }
-    li {
-        list-style: none;
-        margin-bottom: 0.5;
-    }
+.delete-icon-before:before {
+    content: "\2718";
 }
 
+.save-icon-before:before {
+    content: "\2714";
+}
+
+.email-icon-before:before {
+    content: "\2709";
+}
+
+.cross-icon-before:before {
+    content: "\2716";
+}
+
+.search-icon:before {
+    content: "\1f50d";
+}

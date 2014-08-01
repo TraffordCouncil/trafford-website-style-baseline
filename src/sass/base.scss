@@ -1,14 +1,46 @@
-/* BESPOKE STYLESHEET */
+//Trafford Council Baseline stylesheet for www.trafford.gov.uk and related sites
+//Uses Skeleton (http://getskeleton.com/) for its responsive framework
 
-@import "base/settings";    // common values
-@import "themes/default-theme";
-@import "base/mixins";    // sass mixins
-@import "base/common";    // common css classes and sass placeholders
-@import "base/typography";    // fonts, sizes etc.
+// This file collates the Sass partials for final css output
+// Start with core settings etc. first
+// Then start with small 'components', gradually building up to page layouts
 
-@import "components/objects";    // other misc page objects
-@import "components/header";
-@import "components/footer";
+// **********************************************************************
+// DO NOT PUT ANY SASS/CSS rules in here; add them to a partial if needed
+// **********************************************************************
+
+// Core setting, functions and rules
+@import "base/settings";
+@import "base/colours";
+@import "base/typography";
+@import "base/common";
+@import "base/breakpoints";
+
+// TODO: Eventually merge this partial into relevant component partials etc.
+@import "vendor/contensis";
+
+// Core HTML tag styling
+@import "components/html-tags";
+
+// Basic components (order doesn't matter)
+@import "components/a-z";
+@import "components/asides";
+@import "components/buttons";
+@import "components/forms";
+@import "components/images";
+@import "components/links";
 @import "components/navigation";
+@import "components/search-results";
+@import "components/tables";
 
-@import "base/restyle-contensis";    // reset contensis cms styles
+// This is the catch-all that has rules for stuff not covered elsewhere
+@import "components/objects";
+
+// TODO: Create 'themes' partials
+
+// Macro page layouts
+@import "layout/header";
+@import "layout/body";
+@import "layout/footer";
+
+// TODO: Create entire page partials?

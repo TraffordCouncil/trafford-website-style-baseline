@@ -1,143 +1,125 @@
-a {
-    color: $theme-color;
-    text-decoration: none;
-    &:hover { text-decoration: underline; }
-}
+// Navigation
 
-.residents,
-.business,
-.council,
-.visitors {
-    @include font-size(16px, 40px);
+.navbar {
     background-color: $black;
-    color: $white;
-    min-width: 136px;
-    text-align: center;
-    a {
-        padding: 0 $base-font-size;
-        color: inherit;
-        &:after {
-            content: '\00a0\2193';
-            font-weight: 400;
-        }
-        &:before {
-            content: 'for\00a0';
-            font-weight: 400;
-        }
-        &:hover {
-            text-decoration: none;
-        }
-        &:visisted {
-            color: $white;
-        }
-    }
-    &.current {
-        background-color: $white;
-        color: $dark-grey;
-    }
-    &:hover {
-        @extend %inverted;
-    }
 }
 
-.council {
-    a:before { content: 'your\00a0'; }
+.intersitenav {
+    a {
+        @extend .link--inverted;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 8px 0;
+        color: $white;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        &:before {
+//            content: 'for\00a0';
+            font-weight: 400;
+            visibility: hidden;
+            @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
+                content: '';
+            }
+        }
+        &:hover:before {
+            visibility: visible;
+        }
+        &:after {
+            content: '\2193';
+            font-weight: 400;
+            visibility: hidden;
+            @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
+                content: '';
+            }
+        }
+        &:hover:after {
+            visibility: visible;
+        }
+        @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
+            :before, :after {
+                content: '';
+                display: none;
+            }
+        }
+    }
+    .council {
+        a:before {
+//            content: 'your\00a0';
+            font-weight: 400;
+            visibility: hidden;
+            @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
+                content: '';
+            }
+        }
+        a:hover:before {
+            visibility: visible;
+        }
+    }
+    .current {
+        a {
+            color: $black;
+            background-color: $white;
+        }
+    }
 }
 
 .breadcrumbs {
-    margin: $base-font-size 0;
+    margin: $p-font-size * 1.25 0;
+    a {
+        color: $color_bondi_blue_approx;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .mainnav {
-    margin-bottom: $base-font-size*2;
-    h3 a, &__header {
+    h2 {
+        @extend .h3;
+    }
+    h3 {
+        font-weight: 600;
         color: $black;
+        padding: 16px 0 0;
+        a {
+            color: $black;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
+            padding-top: 0;
+        }
     }
     ul {
-        margin: 0;
-    }
-    li {
-        display: inline;
-        list-style: none;
-        &:after {
-            content: '\00a0\007C ';
+        margin-left: 0;
+        li {
+            list-style: none outside none;
+            display: inline;
+            margin-bottom: 10px;
+            padding: 2px 0 0;
+            &:after {
+                content: '\00a0\007C\00a0';
+            }
         }
-        &:last-child:after {
+        :last-child:after {
             content: '';
         }
     }
-}
-
-.atoz {
-    text-transform: uppercase;
-    background-color: $black;
-    color: $white;
-    margin-top: $base-font-size;
-    .title {
-        display: none;
-    }
-    ul {
-        @extend .clearfix;
-        margin: auto;
-        padding: 0;
-        text-align: center;
-    }
-    li {
-        display: inherit;
-        display: inline-block;
-        width: $base-font-size * 2;
-        list-style: none;
-        margin-bottom: 0;
-        &:hover {
-            @extend %inverted;
-        }
-        @media screen and (max-width: $breakpoint-tablet - 1px) {
-            margin: $base-font-size / 2;
-        }
-    }
     a {
-        @include font-size($h3-font-size);
-        color: $white;
-        padding: $base-font-size / 4;
+        color: $color_bondi_blue_approx;
+        text-decoration: none;
         &:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
 }
 
-.contact-details {
-    @include font-size(10px);
-    border-left: 1px solid $white;
-    margin: 0;
-    margin-top: $base-font-size / 2;
-    @media screen and (max-width: $breakpoint-tablet - 1px) {
-        text-align: center;
-        padding-top: $base-font-size;
-        border: none;
-    }
-    p {
-        margin: 0;
-        padding-left: $base-font-size / 2;
-        @media screen and (max-width: $breakpoint-tablet - 1px) {
-            margin: 0;
-            padding: 0;
-        }
-    }
-}
-
-.social-links {
-    text-align: right;
-    float: right;
-    margin-top: $base-font-size;
-    &:after { @extend .clearfix; }
-    img {
-        display: inline-block;
-        margin-right: $base-font-size / 2;
-        width: auto;
-    }
-    a:hover { text-decoration: none;}
-    @media screen and (max-width: $breakpoint-tablet - 1px) {
-        text-align: center;
-        margin: $base-font-size 0;
-    }
+.sys_flickrpager {
+    margin: $base-font-size * 1.25 0;
 }

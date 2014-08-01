@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>News Page Template</title>
+    <meta name="Description" content="Trafford Council content web page template" />
+    <link href="/SiteElements/Stylesheets/100-reset.css" rel="stylesheet" type="text/css" />
+    <link href="/SiteElements/Stylesheets/150-system.css" rel="stylesheet" type="text/css" />
+    <link href="/SiteElements/Stylesheets/200-skeleton.css" rel="stylesheet" type="text/css" />
+    <link href="/SiteElements/Stylesheets/base.css" rel="stylesheet" type="text/css" />
+    <link href="/aspnet_client/ContensisThemes/simple/Common/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/aspnet_client/ContensisThemes/simple/Comments/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/aspnet_client/ContensisThemes/simple/news/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+
+<body>
+    <form>
+
+        <div class="residenthome">
+            <div class="container">
+                <a id="top"></a>
+
+                <!--- START OF HEADER -->
+                <div class="sixteen columns header">
+                    <div class="header-overlay">
+                        
+                    </div>
+                    <div class="headerinner">
+                        <div class="three columns alpha logo">
+                            <a title="Residents" href="/residents/residents.aspx">
+                                <img alt="TClogo2" src="/SiteElements/images/TClogo2.png" height="132" width="132" />
+                            </a><a title="Trafford council website" href="http://www.trafford.gov.uk">&nbsp;</a>
+                        </div>
+                        <div class="six columns omega brand">
+                            <a title="Residents" href="/">
+                                <img alt="TClogo-top-banner" src="/SiteElements/images/TClogo-top-banner.png" height="100" width="268" />
+                            </a>
+                        </div>
+                        <div class="seven columns main-search">
+                            <div class="search">
+                                <div class="sys_search-query-control">
+                                    <label for="SearchQueryControl_SearchTextBox" class="sys_search-label">Search</label>
+                                    <input name="SearchQueryControl_SearchTextBox" type="text" placeholder="search our site" id="SearchQueryControl_SearchTextBox" class="sys_searchbox" />
+                                    <input type="submit" name="SearchQueryControl_SearchButton" value="Search" id="SearchQueryControl_SearchButton" title="Search" class="sys_button sys_searchbutton sys_search-button" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar clearfix">
+                        <div class="sixteen columns intersitenav">
+                            <div class="three columns alpha omega residents current"><a title="Residents" href="/residents/residents.aspx"><span class="strongtextgrey">Residents </span></a>
+                            </div>
+                            <div class="three columns alpha omega business"><a title="Business" href="/business/BusinessHome.aspx"><span class="strongtextgrey">Business </span></a>
+                            </div>
+                            <div class="three columns alpha omega council"><a title="Your Council" href="/about-your-council/your-council.aspx"><span class="strongtextgrey">Council </span></a>
+                            </div>
+                            <div class="three columns alpha omega visitors"><a title="Visit Trafford" href="/visit-trafford/visit-trafford.aspx"><span class="strongtextgrey">Visitors </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- END OF HEADER -->
+                <div class="bodycontent">
+                    <div class="16 columns">
+                        <div class="sixteen columns alpha omega">
+                            <div class="breadcrumbs">
+                                <div>
+                                    <a title="Go to Home from here" href="/Home.aspx">Home</a> &#62; <a title="Go to Residents from here" href="/residents/residents.aspx">Residents</a> &#62; <span>News Archive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sixteen columns">
+                        <h1>News Archive</h1>
+                    </div>
+                    <div class="sixteen columns">
+                        <p id="L3_TopContent" style="width:100%;min-height:100%;">
+                            <div class="sys_news sys_themed sys_theme-simple">
+                                <div class="sys_clear">
+
+                                </div>
+                                <div class="sys_tools-control sys_news-tools-control sys_syndicationlinks-control">
+                                    <div class="sys_button-subscribe-rss">
+                                        <a title=" - RSS Feed (RSS 2.0)" href="/residents/news/news-archive.aspx?SyndicationType=1">RSS Feed</a>
+                                    </div>
+                                    <div class="sys_button-subscribe-atom">
+                                        <a title=" - Atom Feed (Atom 1.0)" href="/residents/news/news-archive.aspx?SyndicationType=2">Atom Feed</a>
+                                    </div>
+                                </div>
+                                <div id="Archive_Ticker_Container" class="sys_ticker">
+                                    <span>Latest:</span><a href="/residents/news/articles/20141224-Trafford-Council-Received-Funding-To-Get-Tougher-On-Fraud.aspx" id="Archive_Ticker_Anchor">Trafford Council Received Funding To Get Tougher On Fraud</a>
+                                </div>
+                                <div id="ctl33" class="sys_news-search-control">
+                                    <div class="sys_search-options">
+                                        <div class="sys_options-inner">
+                                            <div class="sys_basic-search-row sys_keyword-row">
+                                                <label for="ctl38">Enter Keywords</label>
+                                                <input name="ctl38" type="text" value="Enter Keywords" id="ctl38" onkeypress="ContensisSubmitFromTextbox(event,&#39;ctl49&#39;)" />
+                                            </div>
+                                            <div class="sys_basic-search-row sys_year-row">
+                                                <label for="ctl41">Select Year</label>
+                                                <select name="ctl41" id="ctl41">
+                                                    <option selected="selected" value="">All Years</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2005">2005</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="sys_basic-search-row sys_month-row">
+                                                <label for="ctl44">Select Month</label>
+                                                <select name="ctl44" id="ctl44">
+                                                    <option selected="selected" value="">All Months</option>
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="sys_basic-search-row sys_category-row">
+                                                <div class="sys_search-row-label">
+                                                    Select Category
+                                                </div>
+                                                <div class="sys_checkboxlist sys_checkbox-list">
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_0" type="checkbox" name="ctl47_check$0" value="0/1/2/3" />
+                                                        <label for="ctl47_check_0">Advice, Benefits and Tax</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_1" type="checkbox" name="ctl47_check$1" value="0/1/2/4" />
+                                                        <label for="ctl47_check_1">Business</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_2" type="checkbox" name="ctl47_check$2" value="0/1/2/5" />
+                                                        <label for="ctl47_check_2">Community & Living</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_3" type="checkbox" name="ctl47_check$3" value="0/1/2/6" />
+                                                        <label for="ctl47_check_3">Council & Democracy</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_4" type="checkbox" name="ctl47_check$4" value="0/1/2/7" />
+                                                        <label for="ctl47_check_4">Education & Learning</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_5" type="checkbox" name="ctl47_check$5" value="0/1/2/8" />
+                                                        <label for="ctl47_check_5">Environment</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_6" type="checkbox" name="ctl47_check$6" value="0/1/2/9" />
+                                                        <label for="ctl47_check_6">Forms</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_7" type="checkbox" name="ctl47_check$7" value="0/1/2/10" />
+                                                        <label for="ctl47_check_7">Health & Social Care</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_8" type="checkbox" name="ctl47_check$8" value="0/1/2/11" />
+                                                        <label for="ctl47_check_8">Housing</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_9" type="checkbox" name="ctl47_check$9" value="0/1/2/12" />
+                                                        <label for="ctl47_check_9">Jobs & Careers</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_10" type="checkbox" name="ctl47_check$10" value="0/1/2/13" />
+                                                        <label for="ctl47_check_10">Leisure & Culture</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_11" type="checkbox" name="ctl47_check$11" value="0/1/2/14" />
+                                                        <label for="ctl47_check_11">Payments</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_12" type="checkbox" name="ctl47_check$12" value="0/1/2/15" />
+                                                        <label for="ctl47_check_12">Planning</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_13" type="checkbox" name="ctl47_check$13" value="0/1/2/16" />
+                                                        <label for="ctl47_check_13">Social Media</label>
+                                                    </div>
+                                                    <div class="sys_checkbox">
+                                                        <input id="ctl47_check_14" type="checkbox" name="ctl47_check$14" value="0/1/2/17" />
+                                                        <label for="ctl47_check_14">Transport & Streets</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sys_basic-search-row sys_button-row">
+                                                <input type="submit" name="ctl49" value="Search Archive" id="ctl49" class="sys_button sys_searchbutton sys_search-button" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sys_news-control sys_standard-list">
+                                    <h2 class="sys_news-title sys_standardlist-title">News</h2>
+                                    <div id="Archive__List" class="sys_datarepeatercontrol">
+                                        <div class="sys_groupheader sys_first-groupheader">
+                                            <span>Wednesday 24th December 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset sys_first-groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Trafford Council Received Funding To Get Tougher On Fraud" href="/residents/news/articles/20141224-Trafford-Council-Received-Funding-To-Get-Tougher-On-Fraud.aspx">Trafford Council Received Funding To Get Tougher On Fraud</a></h3>
+                                                    <div class="sys_icon sys_payments">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Trafford Council Received Funding To Get Tougher On Fraud</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">24/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader">
+                                            <span>Monday 22nd December 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Greater Manchester councils unite to support our armed forces" href="/residents/news/articles/20141222-Greater-Manchester-councils-unite-to-support-our-armed-forces.aspx">Greater Manchester councils unite to support our armed forces</a></h3>
+                                                    <div class="sys_icon sys_communityliving">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Greater Manchester councils unite to support our armed forces</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">22/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader">
+                                            <span>Friday 19th December 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Wedding venue firm prosecuted for food hygiene and safety breaches" href="/residents/news/articles/20141219-Wedding-venue-firm-prosecuted-for-food-hygiene-and-safety-breaches.aspx">Wedding venue firm prosecuted for food hygiene and safety breaches</a></h3>
+                                                    <div class="sys_icon sys_environment">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Wedding venue firm prosecuted for food hygiene and safety breaches</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">19/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sys_subitem sys_subalternatingitem sys_last">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Dry January 2015" href="/residents/news/articles/20141219-Dry-January-2015.aspx">Dry January 2015</a></h3>
+                                                    <div class="sys_icon sys_healthsocialcare">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Dry January 2015</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">19/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader">
+                                            <span>Thursday 18th December 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Trafford Council&#39;s Meet The Buyer co-locates with The Trafford Business Expo" href="/residents/news/articles/20141218-Trafford-Councils-Meet-The-Buyer-co-locates-with-The-Trafford-Business-Expo.aspx">Trafford Council&#39;s Meet The Buyer co-locates with The Trafford Business Expo</a></h3>
+                                                    <div class="sys_icon sys_business">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Trafford Council's Meet The Buyer co-locates with The Trafford Business Expo</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">18/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sys_subitem sys_subalternatingitem sys_last">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Benefit fraud conviction secured - Holly Anyon" href="/residents/news/articles/20141218-Benefit-fraud-conviction-secured--HollyAnyon.aspx">Benefit fraud conviction secured - Holly Anyon</a></h3>
+                                                    <div class="sys_icon sys_advice,benefitsandtax">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Benefit fraud conviction secured - Holly Anyon</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">18/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader">
+                                            <span>Thursday 11th December 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Trafford&#39;s festive bin collections" href="/residents/news/articles/20141211-traffords-festive-bin-collections.aspx">Trafford&#39;s festive bin collections</a></h3>
+                                                    <div class="sys_icon sys_environment">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Trafford's festive bin collections</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">11/12/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader">
+                                            <span>Friday 28th November 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Funding available for Partington groups" href="/residents/news/articles/20141128-funding-available-for-partington-groups.aspx">Funding available for Partington groups</a></h3>
+                                                    <div class="sys_icon sys_communityliving">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Funding available for Partington groups</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">28/11/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader">
+                                            <span>Thursday 13th November 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="Staying warm, safe and well this winter" href="/residents/news/articles/20141113-staying-warm-safe-and-well-this-winter.aspx">Staying warm, safe and well this winter</a></h3>
+                                                    <div class="sys_icon sys_communityliving">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Stay safe, warm and well this winter</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">13/11/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_groupheader sys_last-groupheader">
+                                            <span>Friday 3rd October 2014</span>
+                                        </div>
+                                        <div class="sys_itemslist sys_groupset sys_last-groupset">
+                                            <div class="sys_subitem sys_first">
+                                                <div>
+                                                    <h3 class="sys_subitem-heading sys_news-subheading"><a title="" href="/residents/news/articles/Trafford-Council-leads-way-with-luanch-of-a-revolutionary-new-digital-service.aspx"></a></h3>
+                                                    <div class="sys_icon sys_communityliving">
+
+                                                    </div>
+                                                    <div class="sys_subitem-summary sys_news-summary">
+                                                        <dl>
+                                                            <dt class="sys_news-description">Description</dt>
+                                                            <dd class="sys_news-description">Trafford Council leads way with launch of a revolutionary new digital service</dd><dt class="sys_news-datepublished">Date:</dt>
+                                                            <dd class="sys_news-datepublished">03/10/2014</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="sys_clear">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sys_flickrpager">
+                                            <div class="sys_paginginfo">
+                                                <span class="c_paginginforecorddescription">Displaying</span>  <span class="sys_paginginfocurrentrecord">1</span>  <span class="sys_paginginforecordcountdescription">to</span>  <span class="sys_paginginfomaxrecord">10</span>  <span class="sys_paginginforecordcountdescription">of</span>  <span class="sys_paginginforecordcount">44</span>
+                                            </div>
+                                            <div class="sys_navigation">
+                                                <span class="sys_navigationprevious sys_disabled"><span>Previous</span></span> <span class="sys_page sys_selected"><span>1</span></span> <span class="sys_page"><a title="Go to the 2nd page of the News" href="/residents/news/news-archive.aspx?Archive__List_GoToPage=2">2</a></span>  <span class="sys_page"><a title="Go to the 3rd page of the News" href="/residents/news/news-archive.aspx?Archive__List_GoToPage=3">3</a></span>  <span class="sys_page"><a title="Go to the 4th page of the News" href="/residents/news/news-archive.aspx?Archive__List_GoToPage=4">4</a></span>  <span class="sys_page"><a title="Go to the 5th page of the News" href="/residents/news/news-archive.aspx?Archive__List_GoToPage=5">5</a></span>  <span class="sys_navigationnext"><a title="Go to the next page of the News" href="/residents/news/news-archive.aspx?Archive__List_GoToPage=2">Next</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="clearfix sixteen columns atoz">
+                    <div class="sys_searchcontainer">
+                        <div class="sys_atoz">
+                            <ul>
+                                
+                                <li><a title="See services beginning with A" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=a">A</a>
+                                </li>
+                                <li><a title="See services beginning with B" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=b">B</a>
+                                </li>
+                                <li><a title="See services beginning with C" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=c">C</a>
+                                </li>
+                                <li><a title="See services beginning with D" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=d">D</a>
+                                </li>
+                                <li><a title="See services beginning with E" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=e">E</a>
+                                </li>
+                                <li><a title="See services beginning with F" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=f">F</a>
+                                </li>
+                                <li><a title="See services beginning with G" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=g">G</a>
+                                </li>
+                                <li><a title="See services beginning with H" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=h">H</a>
+                                </li>
+                                <li><a title="See services beginning with I" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=i">I</a>
+                                </li>
+                                <li><a title="See services beginning with J" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=j">J</a>
+                                </li>
+                                <li><a title="See services beginning with K" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=k">K</a>
+                                </li>
+                                <li><a title="See services beginning with L" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=l">L</a>
+                                </li>
+                                <li><a title="See services beginning with M" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=m">M</a>
+                                </li>
+                                <li><a title="See services beginning with N" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=n">N</a>
+                                </li>
+                                <li><a title="See services beginning with O" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=o">O</a>
+                                </li>
+                                <li><a title="See services beginning with P" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=p">P</a>
+                                </li>
+                                <li><a title="See services beginning with Q" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=q">Q</a>
+                                </li>
+                                <li><a title="See services beginning with R" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=r">R</a>
+                                </li>
+                                <li><a title="See services beginning with S" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=s">S</a>
+                                </li>
+                                <li><a title="See services beginning with T" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=t">T</a>
+                                </li>
+                                <li><a title="See services beginning with U" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=u">U</a>
+                                </li>
+                                <li><a title="See services beginning with V" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=v">V</a>
+                                </li>
+                                <li><a title="See services beginning with W" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=w">W</a>
+                                </li>
+                                <li><a title="See services beginning with X" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=x">X</a>
+                                </li>
+                                <li><a title="See services beginning with Y" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=y">Y</a>
+                                </li>
+                                <li><a title="See services beginning with Z" href="/residents/A-Z.aspx?AZlist_AtoZLetter=b&amp;AZListing_AtoZLetter=z">Z</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sixteen columns clearfix footer">
+                    <div class="footerinner">
+                        <div class="sixteen columns alpha omega links">
+                            <ul>
+                                <li><a title="Accessibility" href="/residents/Accessibility.aspx">Accessibility</a>
+                                </li>
+                                <li><a title="Contact us" href="/residents/contacts/contact-us.aspx">Contact us</a>
+                                </li>
+                                <li><a title="Emergency numbers" href="/residents/community/community-safety/emergencies/emergencies.aspx">Emergency numbers</a>
+                                </li>
+                                <li><a href="/residents/translate.aspx">Translate</a>
+                                </li>
+                                <li><a title="Our customer pledge" href="/residents/our-customer-pledge.aspx">Customer Pledge</a>
+                                </li>
+                                <li><a title="Trafford Council&#39;s Privacy Policy" href="/about-your-council/data-protection/trafford-council-privacy-policy.aspx">Privacy policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sixteen columns">
+                            <div class="three columns alpha logo">
+                                <a title="Trafford council website" href="http://www.trafford.gov.uk">
+                                    <img alt="TClogo-white-transparent" src="/SiteElements/images/TClogo-white-transparent.png" height="114" width="128" />
+                                </a>
+                            </div>
+                            <div class="four columns alpha omega contact-details">
+                                <p>Trafford Council
+                                    <br />Trafford Town Hall
+                                    <br />Talbot Road, Stretford,
+                                    <br />M32 0TH</p>
+                            </div>
+                            <div class="four columns alpha omega footerlogos">
+                                <p>
+                                    <img alt="footer-logos" src="/SiteElements/images/footer-logos.png" height="114" width="283" />
+                                </p>
+                            </div>
+                            <div class="five columns omega other-links">
+                                <a title="YouTube" href="http://www.youtube.com/traffordcouncil">
+                                    <img alt="YouTube" src="/SiteElements/images/icons/flat-shadow/Youtube.png" height="32" width="32" />
+                                </a>
+                                <a title="Twitter" href="http://www.twitter.com/traffordcouncil">
+                                    <img alt="Twitter" src="/SiteElements/images/icons/flat-shadow/Twitter.png" height="32" width="32" />
+                                </a>
+                                <a title="Flickr" href="http://www.flickr.com/photos/traffordcouncil/">
+                                    <img alt="Flickr" src="/SiteElements/images/icons/flat-shadow/Flickr.png" height="32" width="32" />
+                                </a>
+                                <a title="Facebook" href="http://www.facebook.com/pages/Trafford-Council/221393094541057">
+                                    <img alt="Facebook" src="/SiteElements/images/icons/flat-shadow/Facebook.png" height="32" width="32" />
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--- END OF FOOTER -->
+            </div>
+
+        </div>
+
+
+    </form>
+</body>
+
+</html>
