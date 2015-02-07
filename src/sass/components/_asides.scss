@@ -28,7 +28,7 @@
         @extend .inverted-header;
         @extend .h3;
         margin: -($p-font-size / 2);
-        font-weight: 400;
+        font-weight: 700;
         margin-bottom: 0;
     }
 }
@@ -76,7 +76,6 @@
             @extend .inverted-header;
             margin: -($p-font-size / 2);
             margin-bottom: 0;
-            font-weight: 400;
         }
     }
     .sys_comments-rating-and-button {

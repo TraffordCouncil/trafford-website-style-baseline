@@ -1,13 +1,13 @@
 // Typography
 
 // Base font size (px)
-$base-font-size: 16px;
+$base-font-size: 14px;
 
-$h1-font-size: $base-font-size * 2.5;
-$h2-font-size: $base-font-size * 2;
-$h3-font-size: $base-font-size * 1.5;
-$h4-font-size: $base-font-size * 1.125;
-$p-font-size: $base-font-size * 1;
+$h1-font-size: 32px;
+$h2-font-size: 24px;
+$h3-font-size: 16px;
+$h4-font-size: 16px;
+$p-font-size: $base-font-size;
 
 // Convert font size to rem, with px fallback for IE
 // (see http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/)
@@ -16,14 +16,14 @@ $p-font-size: $base-font-size * 1;
     @return #{$remSize}rem;
 }
 
-@mixin font-size($fontSize: $base-font-size, $lineHeight: $fontSize * 1.62) {
+@mixin font-size($fontSize: $base-font-size, $lineHeight: $fontSize * 1.618) {
     // Fallback in px
     font-size: $fontSize;
     line-height: $lineHeight;
     // rem calculations
     font-size: calculateRem($fontSize);
     line-height: $lineHeight / $base-font-size + rem;
-    margin: $lineHeight / 2 auto;
+    margin: $fontSize / 2 0;
 }
 
 html {
@@ -31,27 +31,25 @@ html {
 }
 
 h1, .h1 {
-    @include font-size($h1-font-size, $h1-font-size * 1.05);
+    @include font-size($h1-font-size, $h1-font-size*1.04);
     margin-top: 0;
     font-weight: 700;
 }
 
 h2, .h2 {
-    @include font-size($h2-font-size, $h2-font-size * 1.25);
+    @include font-size($h2-font-size, $h2-font-size*1.25);
     font-weight: 700;
-    margin: $h2-font-size * 0.25 0;
+    margin: $h2-font-size/4 0;
 }
 
 h3, .h3 {
-    @include font-size($h3-font-size, $h3-font-size * 1.25);
+    @include font-size($h3-font-size, $h3-font-size*1.25);
     font-weight: 700;
-    margin: $h3-font-size * 0.25 0;
 }
 
 h4, .h4 {
-    @include font-size($h4-font-size, $h4-font-size * 1.25);
+    @include font-size($h4-font-size, $h4-font-size*1.25);
     font-weight: 700;
-    margin: $h4-font-size * 0.25 0;
 }
 
 p, dd, dt {

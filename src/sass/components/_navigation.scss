@@ -17,7 +17,6 @@
         height: 100%;
         background-color: $black;
         &:before {
-//            content: 'for\00a0';
             font-weight: 400;
             visibility: hidden;
             @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
@@ -47,7 +46,6 @@
     }
     .council {
         a:before {
-//            content: 'your\00a0';
             font-weight: 400;
             visibility: hidden;
             @media screen and (max-width: $breakpoint-tablet-portrait - 1px) {
@@ -58,12 +56,11 @@
             visibility: visible;
         }
     }
-    .current {
-        a {
-            color: $black;
-            background-color: $white;
-        }
-    }
+}
+
+.residenthome .residents a, .businesshome .business a, .councilhome .council a, .visitorshome .visitors a {
+    background-color: $white;
+    color: $color_chicago_approx;
 }
 
 .breadcrumbs {
