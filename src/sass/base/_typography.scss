@@ -1,13 +1,13 @@
 // Typography
 
 // Base font size (px)
-$base-font-size: 16px;
+$base-font-size: 14px;
 
-$h1-font-size: $base-font-size * 2.5;
-$h2-font-size: $base-font-size * 2;
-$h3-font-size: $base-font-size * 1.5;
-$h4-font-size: $base-font-size * 1.125;
-$p-font-size: $base-font-size * 1;
+$h1-font-size: 32px;
+$h2-font-size: 24px;
+$h3-font-size: 16px;
+$h4-font-size: 16px;
+$p-font-size: $base-font-size;
 
 // Convert font size to rem, with px fallback for IE
 // (see http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/)
