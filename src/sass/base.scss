@@ -1,46 +1,8 @@
-//Trafford Council Baseline stylesheet for www.trafford.gov.uk and related sites
-//Uses Skeleton (http://getskeleton.com/) for its responsive framework
-
-// This file collates the Sass partials for final css output
-// Start with core settings etc. first
-// Then start with small 'components', gradually building up to page layouts
-
 // **********************************************************************
 // DO NOT PUT ANY SASS/CSS rules in here; add them to a partial if needed
 // **********************************************************************
 
-// Core setting, functions and rules
-@import "base/settings";
-@import "base/colours";
-@import "base/typography";
-@import "base/common";
-@import "base/breakpoints";
-
-// TODO: Eventually merge this partial into relevant component partials etc.
-@import "vendor/contensis";
-
-// Core HTML tag styling
-@import "components/html-tags";
-
-// Basic components (order doesn't matter)
-@import "components/a-z";
-@import "components/asides";
-@import "components/buttons";
-@import "components/forms";
-@import "components/images";
-@import "components/links";
-@import "components/navigation";
-@import "components/search-results";
-@import "components/tables";
-
-// This is the catch-all that has rules for stuff not covered elsewhere
-@import "components/objects";
-
-// TODO: Create 'themes' partials
-
-// Macro page layouts
-@import "layout/header";
-@import "layout/body";
-@import "layout/footer";
-
-// TODO: Create entire page partials?
+@import "200-foundation";
+@import "300-base";
+@import "sticky-footer";
+@import "media-queries";

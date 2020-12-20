@@ -1,8 +1,17 @@
 {
-  "name": "trafford-style-baseline",
-  "version": "2.0.0",
+  "name": "trafford-website-style-baseline",
+  "version": "3.0.0",
   "description": "Trafford Council website style baseline",
-  "main": "content-page.html",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraffordCouncil/trafford-website-style-baseline.git"
+  },
   "keywords": [
     "css",
     "html",
@@ -10,17 +19,12 @@
     "scss"
   ],
   "author": "Jeremy Page <jeremy.page@trafford.gov.uk>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TraffordCouncil/trafford-website-style-baseline.git"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TraffordCouncil/trafford-website-style-baseline/issues"
   },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-sass": "^0.7.3",
-    "grunt-text-replace": "^0.4.0"
+  "homepage": "https://github.com/TraffordCouncil/trafford-website-style-baseline#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
   }
 }

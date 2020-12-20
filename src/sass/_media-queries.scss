@@ -1,0 +1,280 @@
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  .five-priorities {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 1023px) {
+  .search-wrapper-generic {
+    .sys_searchbox {
+      width: 80%;
+    }
+
+    .sys_search-button,
+    .sys_searchbutton {
+      width: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+}
+
+@media screen and (max-width: 767px) {
+  .header .social-media-icons {
+    display: none;
+  }
+
+  .main-content-white {
+    border: 12px #fff solid;
+  }
+
+  .homepage-popular-topic {
+    font-size: 1.4rem;
+  }
+
+  .search {
+    margin: 0 auto;
+    padding: 14px;
+  }
+
+  .sys_search-button,
+  .sys_searchbutton {
+    width: 15%;
+  }
+
+  .sys_searchbox {
+    width: 85%;
+  }
+
+  .homepage-view-more {
+    p,
+    h3 {
+      font-size: 95%;
+    }
+  }
+
+  .grid-container {
+    padding-left: 0.62rem;
+    padding-right: 0.62rem;
+  }
+
+  .search-wrapper {
+    margin: auto;
+    width: 100%;
+    float: none;
+  }
+
+  .social-media-icon-text {
+    display: none;
+  }
+
+  .social-media-icons {
+    width: 190px;
+  }
+
+  .login {
+    padding: 24px 0;
+  }
+
+  .login-generic {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .half-width {
+    width: 100% !important;
+    height: auto !important;
+    float: right !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .responsive-card-table {
+    thead tr {
+      position: absolute;
+      top: -9999em;
+      left: -9999em;
+    }
+
+    tr {
+      border: 0px solid #0a0a0a;
+      display: block;
+
+      + tr {
+        margin-top: 1.5rem;
+      }
+    }
+
+    td {
+      border: none;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-bottom: 0px solid #0a0a0a;
+      padding-left: 50%;
+      position: relative;
+
+      &:before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-left: -100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        background: #e6e6e6;
+        width: 45%;
+        height: 95%;
+        left: 1px;
+        top: 1px;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 958px) {
+	.do-it > div h1,
+	.do-it__item h1 {
+	  font-size: 15.75px;
+	  line-height: 15.75px;
+	  font-size: 1.125rem;
+	  line-height: 1.125rem;
+	  margin: 70px 0 0;
+	  font-weight: 400;
+	}
+  }
+
+  @media screen and (max-width: 767px) {
+	.image {
+	  img {
+		display: none;
+	  }
+  
+	  .caption {
+		font-size: 14px;
+		line-height: 22.68px;
+		font-size: 1rem;
+		line-height: 1.62rem;
+		position: relative;
+		text-align: left;
+		bottom: auto;
+		left: auto;
+		right: auto;
+		margin: 14px 0;
+	  }
+	}
+  
+	.search {
+	  margin: 14px auto;
+	  width: 200px;
+	  padding: 0;
+	  float: none;
+	}
+  
+	.intersitenav {
+	  .council a:before {
+		content: "";
+	  }
+  
+	  a {
+		&:after,
+		&:before {
+		  content: "";
+		}
+  
+		:after,
+		:before {
+		  content: "";
+		  display: none;
+		}
+	  }
+	}
+  
+	.mainnav h3 {
+	  padding-top: 0;
+	}
+  
+	.header .logo {
+	  margin: 0 22% 0 28%;
+	}
+  
+	.header-overlay {
+	  display: none;
+	}
+  
+	.brand {
+	  padding-top: 7px;
+	  text-align: center;
+	}
+  
+	.do-it > div {
+	  width: 100%;
+	  margin: 7px 0;
+	  background-position: left center;
+	}
+  
+	.do-it__item {
+	  background-position: left center;
+	}
+  
+	.do-it > div h1,
+	.do-it__item h1 {
+	  font-size: 15.75px;
+	  line-height: 15.75px;
+	  font-size: 1.125rem;
+	  line-height: 1.125rem;
+	  margin: 0 0 0 70px;
+	}
+  
+	.do-it > div p,
+	.do-it__item p {
+	  min-height: inherit;
+	  margin: 0 0 0 70px;
+	}
+  
+	.search {
+	  min-height: 35px;
+	}
+  
+	.footer {
+	  .other-links {
+		padding: 0;
+		margin: 0;
+		float: none;
+		text-align: center;
+  
+		img {
+		  float: none;
+		}
+	  }
+  
+	  .contact-details {
+		padding: 0;
+		margin: 0;
+		border: 0;
+	  }
+  
+	  text-align: center;
+	}
+  }
+  

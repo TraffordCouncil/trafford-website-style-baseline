@@ -1,0 +1,39 @@
+@media print {
+	body {
+	  font-size: 12pt;
+	}
+  
+	  /*
+	  a:link, a:visited {
+		  background: transparent;
+		  font-weight: bold;
+		  font-size: 90%;
+	  }
+	  */
+  
+	a {
+	  &:link:after, &:visited:after {
+		content: " (" attr(href) ") ";
+	  }
+  
+	  &[href^="/"]:after {
+		content: " (http://www.trafford.gov.uk" attr(href) ") ";
+	  }
+	}
+  
+	.no-print {
+	  display: none;
+  
+	  * {
+		display: none;
+	  }
+	}
+  
+	.aside, .header, .breadcrumbs, .atoz, .footer {
+	  display: none;
+	}
+  
+	.page-break {
+	  page-break-before: always;
+	}
+  }

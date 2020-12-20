@@ -1,0 +1,30 @@
+/* Sticky footer */
+
+html,
+body,
+#form1,
+.sticky-footer-container {
+  height: 100%;
+}
+
+/* Stop double-scrollbar bug */
+
+body {
+  margin: 0;
+}
+
+.sticky-footer-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollable {
+  flex: 1 0 auto;
+}
+
+.sticky {
+  flex-shrink: 0;
+}
+
+/* End of sticky footer */

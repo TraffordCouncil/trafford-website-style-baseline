@@ -10,16 +10,16 @@ Very quickly it was discovered just how much effort is involved in maintaining p
 In an attempt to control the rampant spread of fudged css rules and excessive duplication,
 the entire design has been rewritten using [Sass](http://sass-lang.com/).
 
-The css output, and other pre-deployment tasks, are created using [Grunt](http://gruntjs.com/).
+The css output, and other pre-deployment tasks, are created using [Gulp](https://gulpjs.com/).
 
 Content
 -------
 
-### src ###
+### src
 
 Development source files. Mainly template pages and Sass stylesheets.
 
-### dist ###
+### dist
 
 Disribution files: compiled css and JavaScript, and reformatted html template files.
 This folder is generated during compilation and output processing and so should not be edited directly as any changes will be overwritten.
@@ -36,22 +36,25 @@ The pre-compiled files in _dist_ can be used directly within the website. Use _c
 
 To compile and build your own files from the _src_ folder:
 
-1. Ensure Grunt is installed on your computer (http://gruntjs.com/getting-started);
-2. Open terminal / command-line window at the project root;
-3. Install necessary Grunt dependencies: ```[sudo] npm install```;
-4. Run Grunt: ```grunt```. The dist folder will be cleared an re-populated with the latest compiled versions.
+1. Install Gulp CLI: ```npm i -g gulp-cli```
+2. Open terminal / command-line window at the project root
+3. Install necessary dependencies: ```(sudo) npm install```
+4. Run Gulp: ```gulp```
+5. To run Gulp in watch mode (auto detect changes and recompile scss): ``` gulp watch```
 
 Release Notes
 -------------
 
+### v3.0.0
+
+- Re-sync with live site
+
 ### v2.0.0 ###
 
-Complete re-write of all rules. All original css convertered to Sass using [Css2Sass](http://sebastianpontow.de/css2compass/).
-
-Only Trafford styles re-created ([300-base on www.trafford.gov.uk](http://www.trafford.gov.uk/SiteElements/Stylesheets/300-base.css)) -- other stylesheets still need converting and re-engineering.
-
-Create output with correct paths for Contensis CMS.
+- Complete re-write of all rules. All original css convertered to Sass using [Css2Sass](http://sebastianpontow.de/css2compass/).
+- Only Trafford styles re-created ([300-base on www.trafford.gov.uk](http://www.trafford.gov.uk/SiteElements/Stylesheets/300-base.css)) -- other stylesheets still need converting and re-engineering.
+- Create output with correct paths for Contensis CMS.
 
 ### v1.0.0 ###
 
-Initial re-creation and consolidation of Trafford styles using Sass.
+- Initial re-creation and consolidation of Trafford styles using Sass.
