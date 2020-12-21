@@ -1,53 +1,28 @@
 @charset "UTF-8";
+a[href$=".csv"]::after,
+a[href$=".xls"]::after,
+a[href$=".xlsx"]::after,
+a[href$=".doc"]::after,
+a[href$=".docx"]::after,
+a[href$=".pdf"]::after,
+a[href$=".ppt"]::after {
+  font-family: "Font Awesome 5 Pro";
+}
 a[href$=".csv"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
   content: "\f6dd";
 }
-a[href$=".xls"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
-  content: "\f6dd";
-  content: "\f1c3";
-}
+a[href$=".xls"]::after,
 a[href$=".xlsx"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
-  content: "\f6dd";
   content: "\f1c3";
 }
-a[href$=".doc"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
-  content: "\f1c2";
-}
+a[href$=".doc"]::after,
 a[href$=".docx"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
   content: "\f1c2";
 }
 a[href$=".pdf"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
   content: "\f1c1";
 }
 a[href$=".ppt"]::after {
-  font-family: "Font Awesome 5 Pro";
-  font-size: 20px;
-  padding-left: 6px;
-  font-weight: 100;
   content: "\f1c4";
 }
 .atoz {
