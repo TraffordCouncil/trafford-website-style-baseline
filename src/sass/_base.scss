@@ -1,13 +1,13 @@
 @charset "UTF-8";
 a[href$=".csv"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
   content: "\f6dd";
 }
 a[href$=".xls"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
@@ -15,7 +15,7 @@ a[href$=".xls"]::after {
   content: "\f1c3";
 }
 a[href$=".xlsx"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
@@ -23,28 +23,28 @@ a[href$=".xlsx"]::after {
   content: "\f1c3";
 }
 a[href$=".doc"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
   content: "\f1c2";
 }
 a[href$=".docx"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
   content: "\f1c2";
 }
 a[href$=".pdf"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
   content: "\f1c1";
 }
 a[href$=".ppt"]::after {
-  font-family: Font Awesome 5 Pro;
+  font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   padding-left: 6px;
   font-weight: 100;
@@ -226,7 +226,7 @@ a[href$=".ppt"]::after {
   position: relative;
   margin-bottom: 0;
   .hts-toggle__title::before {
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro";
     font-weight: 700;
     content: "\f062";
     margin-right: 0.5em;
@@ -244,7 +244,7 @@ a[href$=".ppt"]::after {
       opacity: 1;
     }
     .hts-toggle__title:before {
-      font-family: Font Awesome 5 Pro;
+      font-family: "Font Awesome 5 Pro";
       font-weight: 700;
       content: "\f062";
       margin-right: 0.5em;
@@ -293,7 +293,7 @@ a[href$=".ppt"]::after {
   .hts-accordion__section {
     &.hts-accordion__section--active {
       .hts-accordion__title::before {
-        font-family: Font Awesome 5 Pro;
+        font-family: "Font Awesome 5 Pro";
         font-weight: 700;
         content: "\f062";
         margin-right: 0.5em;
@@ -324,7 +324,7 @@ a[href$=".ppt"]::after {
     }
   }
   .hts-accordion__title::before {
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro";
     font-weight: 700;
     content: "\f062";
     margin-right: 0.5em;
@@ -2147,7 +2147,7 @@ dl {
   padding-left: 3em;
   position: relative;
   &:before {
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro";
     font-weight: 700;
     content: "\f00c";
     margin-right: 0.5em;
@@ -2278,7 +2278,7 @@ i.fas.fa-check.status-ok {
   min-height: 4rem;
   &:before {
     position: absolute;
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro";
     top: 0.5rem;
     left: 1rem;
     content: "\f071";
