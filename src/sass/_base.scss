@@ -25,6 +25,10 @@ a[href$=".pdf"]::after {
 a[href$=".ppt"]::after {
   content: "\f1c4";
 }
+// TODO: Get rid of .footer class
+footer {
+  margin-top: 2em;
+}
 .atoz {
   margin-left: 0;
   margin-bottom: 0;
@@ -1009,28 +1013,19 @@ button {
   }
 }
 blockquote {
-  border-left: 10px solid $color_hit_gray_approx;
-  padding: 1em 0 1em 1em;
-  margin: 2em 0;
-  color: $black;
-  font-style: italic;
-  position: relative;
+  color: $color_cod_gray_approx;
   p {
-    color: $black;
+    color: $color_cod_gray_approx;
     font-style: italic;
   }
   a {
     text-decoration: none;
     background: $color_gallery_approx;
     cursor: pointer;
-    padding: 0 3px;
   }
   em {
     font-style: italic;
   }
-}
-blockquote::after {
-  content: "";
 }
 .fade {
   background-color: $color_allports_approx;
@@ -1740,21 +1735,6 @@ figure {
   line-height: 0.85rem;
   margin: 7px 0;
 }
-.apply {
-  background-image: url(/SiteElements/images/apply.png);
-}
-.book {
-  background-image: url(/SiteElements/images/book.png);
-}
-.pay {
-  background-image: url(/SiteElements/images/pay.png);
-}
-.report {
-  background-image: url(/SiteElements/images/report.png);
-}
-.say {
-  background-image: url(/SiteElements/images/say.png);
-}
 .strongtext {
   font-weight: 700;
 }
@@ -1881,153 +1861,6 @@ figure {
   margin: 0;
   font-size: 90%;
   font-weight: 700;
-}
-.eventsSlider {
-  margin-bottom: 1em;
-}
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  &:focus {
-    outline: 0;
-  }
-  &.dragging {
-    cursor: hand;
-  }
-}
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  li {
-    position: relative;
-    padding: 0;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    button {
-      font-size: 0;
-      line-height: 0;
-      display: block;
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-      cursor: pointer;
-      color: transparent;
-      border: 0;
-      outline: 0;
-      background: 0 0;
-      &:focus {
-        outline: 0;
-        &:before {
-          opacity: 1;
-        }
-      }
-      &:hover {
-        outline: 0;
-        &:before {
-          opacity: 1;
-        }
-      }
-      &:before {
-        font-family: slick;
-        font-size: 6px;
-        line-height: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        content: "•";
-        text-align: center;
-        opacity: 0.25;
-        color: $black;
-      }
-    }
-    &.slick-active button:before {
-      opacity: 0.75;
-      color: $black;
-    }
-  }
-}
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  &:after {
-    display: table;
-    content: "";
-    clear: both;
-  }
-  &:before {
-    display: table;
-    content: "";
-  }
-}
-.slick-loading {
-  .slick-track {
-    visibility: hidden;
-  }
-  .slick-slide {
-    visibility: hidden;
-  }
-  .slick-list {
-    background: $white url(./ajax-loader.gif) center center no-repeat;
-  }
-}
-[dir="rtl"] {
-  .slick-slide {
-    float: right;
-  }
-  .slick-prev {
-    right: -25px;
-    left: auto;
-    &:before {
-      content: "→";
-    }
-  }
-  .slick-next {
-    right: auto;
-    left: -25px;
-    &:before {
-      content: "←";
-    }
-  }
-}
-@font-face {
-  font-family: slick;
-  font-weight: 400;
-  font-style: normal;
-  src: url(./fonts/slick.eot?#iefix) format("embedded-opentype"),
-    url(./fonts/slick.woff) format("woff"),
-    url(./fonts/slick.ttf) format("truetype"),
-    url(./fonts/slick.svg#slick) format("svg");
-}
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0;
-  border-radius: 4px;
-  ul {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: 200px;
-    list-style: none;
-  }
 }
 dl {
   &.flex {
@@ -2174,13 +2007,6 @@ a[href]:after {
   font-size: 1.8rem;
   font-weight: 400;
 }
-i.fas.fa-check.status-ok {
-  background-color: $color_japanese_laurel_approx;
-  color: $white;
-  padding: 0.5em;
-  border-radius: 50%;
-  margin: 0 0.5em 0 0;
-}
 .mipim-slider > div {
   height: 0;
   position: relative;
@@ -2206,75 +2032,6 @@ i.fas.fa-check.status-ok {
 }
 .media-object-section > i {
   min-width: 1em;
-}
-.fa-bags-shopping.colour {
-  color: $color_torea_bay_approx;
-}
-.fa-house.colour {
-  color: $color_torea_bay_approx;
-}
-.fa-money-check-edit.colour {
-  color: $color_torea_bay_approx;
-}
-.fa-parking.colour {
-  color: $color_torea_bay_approx;
-}
-.fa-pound-sign.colour {
-  color: $color_torea_bay_approx;
-}
-.fa-users.colour {
-  color: $color_torea_bay_approx;
-}
-.fa-heartbeat.colour {
-  color: $color_green_haze_approx;
-}
-.fa-industry-alt.colour {
-  color: $color_green_haze_approx;
-}
-.fa-trash-alt.colour {
-  color: $color_green_haze_approx;
-}
-.fa-trees.colour {
-  color: $color_green_haze_approx;
-}
-.fa-vial.colour {
-  color: $color_green_haze_approx;
-}
-.fa-child.colour {
-  color: $color_allports_approx;
-}
-.fa-comments.colour {
-  color: $color_allports_approx;
-}
-.fa-rings-wedding.colour {
-  color: $color_allports_approx;
-}
-.fa-swimmer.colour {
-  color: $color_allports_approx;
-}
-.fa-user-hard-hat.colour {
-  color: $color_allports_approx;
-}
-.fa-backpack.colour {
-  color: $color_totem_pole_approx;
-}
-.fa-city.colour {
-  color: $color_totem_pole_approx;
-}
-.fa-house-user.colour {
-  color: $color_totem_pole_approx;
-}
-.fa-viruses.colour {
-  color: $color_totem_pole_approx;
-}
-.fa-books.colour {
-  color: $color_buttered_rum_approx;
-}
-.fa-burger-soda.colour {
-  color: $color_buttered_rum_approx;
-}
-.fa-cars.colour {
-  color: $color_buttered_rum_approx;
 }
 .no-hover:hover {
   text-decoration: none;
