@@ -1,602 +1,589 @@
 .sys_accordianMenu {
-  li {
-    list-style: none !important;
-
-    ul li {
-      font-weight: normal;
-      padding: 0 0 0 6px;
-    }
-  }
-
-  padding-bottom: 12px;
-}
-.sys_accordianitem sys_open {
-  padding-bottom: 12px;
-}
-.subnav {
-  .sys_selected {
-    text-decoration: underline;
-  }
+	padding-bottom: 12px;
+	li {
+		list-style: none !important;
+		ul li {
+			font-weight: normal;
+			padding: 0 0 0 6px;
+		}
+	}
 }
 .sys_search-query-control {
-  background-color: #fff;
+	background-color: $white;
 }
 .sys_search-label {
-  position: absolute;
-  left: -10000px;
-}
-.sys_news-search-control sys_search-button {
-  width: 80px;
-  text-indent: 0;
-  background-color: #fff;
+	position: absolute;
+	left: -10000px;
 }
 .sys_searchbox {
-  float: left;
-  background-color: #fff;
-  border: 0;
-  color: #333;
-  height: 58px;
-  width: 93%;
-  box-sizing: border-box;
-  border-radius: 3px 0 0 3px;
-  padding: 0 7px;
-  font-size: 1.5rem;
+	font-size: 1.5rem;
+	float: left;
+	background-color: $white;
+	border: 0;
+	color: $color_mine_shaft_approx;
+	height: 28px;
+	width: 80%;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px 0 0 3px;
+	padding: 0 7px;
 }
-.sys_comments-control .sys_addcomments-row {
-  box-sizing: border-box;
-
-  * {
-    box-sizing: border-box;
-  }
+.sys_comments-control {
+	padding-left: 0;
+	list-style: none;
+	margin: 1rem 0;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	background-color: $white;
+	margin-bottom: 17.5px;
+	padding: 7px;
+	.sys_addcomments-row {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		* {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	h2 {
+		margin: -7px -7px 0;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		background-color: $color_allports_approx;
+		color: $white;
+		padding: 3.5px 7px;
+		font-weight: 400;
+		font-size: 1.3rem;
+		line-height: 1.2;
+	}
+	h3 {
+		margin: -7px -7px 0;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		background-color: $color_allports_approx;
+		color: $white;
+		padding: 3.5px 7px;
+		font-weight: 400;
+		font-size: 1.3rem;
+		line-height: 1.2;
+	}
+	.sys_addcomments-title {
+		margin: -7px -7px 0;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		background-color: $color_allports_approx;
+		color: $white;
+		padding: 3.5px 7px;
+		font-weight: 400;
+		font-size: 1.3rem;
+		line-height: 1.2;
+	}
+	.sys_comments-rating-and-button {
+		padding: 10px 0 0;
+	}
 }
-
-.sys_search-button,
+.sys_search-button {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVxJREFUeNrsWO0NgjAQVSboCGwgI+AEMgJu4AhswAh1A90AnUCcADdAJ9AzORLStLXeXdUYLnk/SOjxcvfuo8xmP2bzgHdSQAFY4XMOuCBawBGw/wTZDNAA7gHoAGVMMlUgERMngJImo4lkBvQYXRGrPR/RmJYcUWFEXClkRyp3OK9fOC+QsHluxyXUWZyGClU5opVTyRQWZxWhKnupKGmLBqSqU0mka0MkpLhpS0bdeGwtkdDVcpZEyLQDoziunMpKfm24Jp6eRLWUE7HEoZkVg4yIHmvLqFAC7aPnrBpmuWqB0aM5emoYDjPHPEu5C5ltuDYekSvP7kSKjrnClh5HLfanGz4vkKhPa2vAltsKSuaCRt0YXk7/nrgtRiM16COE2KCzjEtq/kbEMtSNGmnqjLq6WG4rKpamqBUbNX0TqYnUROofSDXf2qmfDXXJvQzEjlQn+cdE1B4CDABmuh0CliknhgAAAABJRU5ErkJggg==") no-repeat center;
+	border: 0;
+	padding: 0;
+	text-indent: -9999px;
+	width: 7%;
+	height: 58px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 3px 3px 0;
+	:hover {
+		cursor: pointer;
+	}
+}
 .sys_searchbutton {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVxJREFUeNrsWO0NgjAQVSboCGwgI+AEMgJu4AhswAh1A90AnUCcADdAJ9AzORLStLXeXdUYLnk/SOjxcvfuo8xmP2bzgHdSQAFY4XMOuCBawBGw/wTZDNAA7gHoAGVMMlUgERMngJImo4lkBvQYXRGrPR/RmJYcUWFEXClkRyp3OK9fOC+QsHluxyXUWZyGClU5opVTyRQWZxWhKnupKGmLBqSqU0mka0MkpLhpS0bdeGwtkdDVcpZEyLQDoziunMpKfm24Jp6eRLWUE7HEoZkVg4yIHmvLqFAC7aPnrBpmuWqB0aM5emoYDjPHPEu5C5ltuDYekSvP7kSKjrnClh5HLfanGz4vkKhPa2vAltsKSuaCRt0YXk7/nrgtRiM16COE2KCzjEtq/kbEMtSNGmnqjLq6WG4rKpamqBUbNX0TqYnUROofSDXf2qmfDXXJvQzEjlQn+cdE1B4CDABmuh0CliknhgAAAABJRU5ErkJggg==")
-    no-repeat center;
-  border: 0;
-  padding: 0;
-  text-indent: -9999px;
-  width: 7%;
-  height: 58px;
-  border-radius: 0 3px 3px 0;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVxJREFUeNrsWO0NgjAQVSboCGwgI+AEMgJu4AhswAh1A90AnUCcADdAJ9AzORLStLXeXdUYLnk/SOjxcvfuo8xmP2bzgHdSQAFY4XMOuCBawBGw/wTZDNAA7gHoAGVMMlUgERMngJImo4lkBvQYXRGrPR/RmJYcUWFEXClkRyp3OK9fOC+QsHluxyXUWZyGClU5opVTyRQWZxWhKnupKGmLBqSqU0mka0MkpLhpS0bdeGwtkdDVcpZEyLQDoziunMpKfm24Jp6eRLWUE7HEoZkVg4yIHmvLqFAC7aPnrBpmuWqB0aM5emoYDjPHPEu5C5ltuDYekSvP7kSKjrnClh5HLfanGz4vkKhPa2vAltsKSuaCRt0YXk7/nrgtRiM16COE2KCzjEtq/kbEMtSNGmnqjLq6WG4rKpamqBUbNX0TqYnUROofSDXf2qmfDXXJvQzEjlQn+cdE1B4CDABmuh0CliknhgAAAABJRU5ErkJggg==") no-repeat center;
+	border: 0;
+	padding: 0;
+	text-indent: -9999px;
+	width: 7%;
+	height: 58px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
 }
 .sys_theme-simple {
-  .sys_blogs-control .sys_subitem,
-  .sys_datarepeatercontrol .sys_itemslist {
-    padding: 0;
-  }
-  .sys_blogs-control .sys_subitem .sys_subitem-heading {
-    font-size: 1.1em;
-  }
-
-  .sys_eventslistwithcalendaricon-themed {
-    padding: 12px;
-  }
-
-  .sys_datarepeatercontrol .sys_subitem {
-    border: 0;
-  }
-
-  .sys_blogs-control .sys_subitem .sys_subitem-heading {
-    margin: 0;
-    padding: 0;
-  }
-  .sys_imageslideshowgallery-control .sys_imageslideshowgallery-caption {
-    display: none;
-  }
-
-  a {
-    &.sys_imagegallery-next,
-    &.sys_imagegallery-prev {
-      display: none;
-    }
-  }
-
-  .sys_imageslideshowgallery-control {
-    width: auto;
-
-    .sys_imageslideshowgallery-container {
-      background: #fff;
-    }
-
-    .sys_imageslideshowgallery-title,
-    .sys_imageslideshownav-control {
-      display: none;
-    }
-  }
-  .sys_standardlist-title,
-  h1.sys_standardlist-title,
-  h2.sys_standardlist-title,
-  h3.sys_standardlist-title,
-  h4.sys_standardlist-title,
-  h5.sys_standardlist-title {
-    margin: -6px;
-    padding: 3.5px 7px;
-  }
-
-  .sys_datarepeatercontrol {
-    li.sys_subitem {
-      padding: 0.4em 10px 0.4em 0;
-
-      a {
-        background: 0 0;
-        padding: 5px 12px;
-      }
-    }
-
-    .sys_subitem dl dd {
-      padding: 0 6px 0 0;
-    }
-  }
-  .sys_rating-control {
-    .sys_rating-caption {
-      display: none !important;
-    }
-
-    margin-top: 4px !important;
-    min-height: 12px !important;
-  }
-
-  .sys_comments-control
-    .sys_add-your-comment
-    .sys_comments-rating-and-button
-    input.sys_button {
-    padding: 0 !important;
-  }
-  .sys_datarepeatercontrol .sys_subitem dl dt {
-    color: #333;
-    float: left;
-    min-height: 1.2em;
-    position: relative;
-    width: 100px !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  .sys_flickrpager .sys_navigation .sys_disabled {
-    color: #757575;
-  }
-  .sys_rating-control .sys_rating-label {
-    display: none;
-  }
-}
-
-.sys_navigationprevious.sys_disabled {
-  color: #757575;
-}
-
-.sys_selfservice-reg-control .sys_options legend {
-  display: none;
-}
-
-.sys_first {
-  margin-bottom: 0 !important;
-}
-
-.search-wrapper-generic {
-  margin-top: 10px;
-
-  .sys_search-query-control {
-    max-height: 50px;
-  }
-
-  .sys_searchbox {
-    height: 50px;
-    width: 90%;
-  }
-
-  .sys_search-button,
-  .sys_searchbutton {
-    width: 10%;
-    height: 50px;
-  }
-}
-.sys_atoz-control {
-  color: #000;
-  text-transform: uppercase;
-
-  ul {
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-  }
-
-  li {
-    text-align: center;
-    color: #fff;
-    background-color: #007c9e;
-    font-size: 0.8rem;
-    line-height: 2rem;
-    width: 26px;
-    display: inline-block;
-    box-sizing: border-box;
-    border: 1px #fff solid;
-    margin-bottom: 3px;
-  }
-
-  a {
-    color: #fff;
-  }
-
-  li:hover {
-    background-color: #000;
-    text-decoration: underline;
-  }
-}
-.sys_bloglist-themed {
-  padding: 0 1.25rem 0 1.25rem;
-}
-
-.sys_atoz_heading {
-  line-height: 1.2;
-}
-.sys_page > a:hover {
-  text-decoration: none;
-}
-
-.sys_atoz-control ul {
-  &:after,
-  &:before {
-    content: "\0020";
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-}
-
-.sys_page > a {
-  border: 1px solid #ccc;
-  padding: 0.2em 0.5em;
-}
-
-.sys_addcomments-title,
-.sys_page > a:hover {
-  background-color: #007c9e;
-  color: #fff;
-}
-
-.sys_first.sys_0to9 {
-  width: 2em;
-}
-
-dt {
-  &.sys_blogs-datepublished,
-  &.sys_blogs-description,
-  &.sys_generic_list-description {
-    display: none;
-  }
-}
-.sys_cms-form-control ul.sys_cms-form-body {
-  margin: 0 0 5px;
-  padding: 0;
-
-  li.sys_cms-form-item {
-    margin: 0 0 5px;
-    padding: 0;
-  }
-}
-.sys_form-submit {
-  background-color: #007c9e;
-  padding: 12px;
-
-  &:hover {
-    background-color: #003d4e;
-  }
-}
-.sys_addcomments-title {
-  font-weight: 400;
-  margin: -9px -9px 10px;
-  padding: 6pt 0;
-}
-.blog-article .sys_addcomments-title {
-  color: #333;
-}
-.sys_paginginfo {
-  float: right;
-}
-
-.sys_addcomments-row textarea {
-  width: 95%;
-}
-
-.sys_cms-form-validationsummary {
-  color: #a33f49;
-}
-.sys_comments-control ul {
-  margin-left: 0;
-  padding-left: 0;
-}
-.sys_comments-control {
-  padding-left: 0;
-  margin: 0;
-}
-.sys_comments-control {
-  list-style: none;
-  margin: 14px 0;
-  margin: 1rem 0;
-}
-.sys_comments-control {
-  box-sizing: border-box;
-  background-color: #fff;
-  margin-bottom: 17.5px;
-  padding: 7px;
-}
-.sys_comments-control {
-  h2,
-  h3 {
-    margin: -7px -7px 0;
-  }
-}
-.sys_events-contact,
-.sys_events-date,
-.sys_events-time,
-.sys_events-location,
-.sys_events-registration.url {
-  float: left;
-  margin-top: 0;
-  padding: 0.5em 1em 0.5em 0;
-}
-
-.sys_events-category {
-  display: none;
-}
-dt {
-  &.sys_events-description {
-    display: none;
-  }
-}
-
-dd.sys_events-description {
-  clear: both;
-}
-.sys_comments-control {
-  .sys_addcomments-row {
-    box-sizing: border-box;
-
-    * {
-      box-sizing: border-box;
-    }
-  }
-
-  .sys_addcomments-title {
-    margin: -7px -7px 0;
-  }
-}
-.sys_search-button :hover,
-.sys_searchbutton {
-  cursor: pointer;
-}
-
-sys_news-search-control sys_search-button {
-  width: 120px;
-  text-indent: 0;
-}
-
-.sys_searchbox {
-  float: left;
-  background-color: #fff;
-  border: 0;
-  color: #333;
-  height: 28px;
-  width: 80%;
-  box-sizing: border-box;
-  border-radius: 3px 0 0 3px;
-  padding: 0 7px;
-}
-.sys_search-label {
-  position: absolute;
-  left: -10000px;
-}
-.sys_flickrpager {
-  margin: 17.5px 0;
-}
-.sys_search-title,
-.sys_search-url,
-dt.sys_search-description {
-  display: none;
-}
-.sys_comments-control {
-  .sys_addcomments-title,
-  h2,
-  h3 {
-    box-sizing: border-box;
-    background-color: #007c9e;
-    color: #fff;
-    padding: 3.5px 7px;
-    font-weight: 400;
-    font-size: 1.3rem;
-  }
-}
-
-.sys_comments-control .sys_comments-rating-and-button {
-  padding: 10px 0 0;
-}
-
-.sys_logon-control,
-.sys_selfservice-reg-control,
-blockquote {
-  line-height: 1.4;
+	.sys_datarepeatercontrol {
+		.sys_itemslist {
+			padding: 0;
+		}
+		.sys_subitem {
+			border: 0;
+			dl {
+				dd {
+					padding: 0 6px 0 0;
+				}
+				dt {
+					color: $color_mine_shaft_approx;
+					float: left;
+					min-height: 1.2em;
+					position: relative;
+					width: 100px !important;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+		li.sys_subitem {
+			padding: 0.4em 10px 0.4em 0;
+			a {
+				background: 0 0;
+				padding: 5px 12px;
+			}
+		}
+	}
+	.sys_eventslistwithcalendaricon-themed {
+		padding: 12px;
+	}
+	.sys_imageslideshowgallery-control {
+		width: auto;
+		.sys_imageslideshowgallery-caption {
+			display: none;
+		}
+		.sys_imageslideshowgallery-container {
+			background: $white;
+		}
+		.sys_imageslideshowgallery-title {
+			display: none;
+		}
+		.sys_imageslideshownav-control {
+			display: none;
+		}
+	}
+	a {
+		&.sys_imagegallery-next {
+			display: none;
+		}
+		&.sys_imagegallery-prev {
+			display: none;
+		}
+	}
+	.sys_standardlist-title {
+		margin: -6px;
+		padding: 3.5px 7px;
+	}
+	.sys_rating-control {
+		margin-top: 4px !important;
+		min-height: 12px !important;
+		.sys_rating-caption {
+			display: none !important;
+		}
+		.sys_rating-label {
+			display: none;
+		}
+	}
+	.sys_blogs-control .sys_subitem {
+		padding: 0;
+		.sys_subitem-heading {
+			font-size: 1.1em;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	h1.sys_standardlist-title {
+		margin: -6px;
+		padding: 3.5px 7px;
+	}
+	h2.sys_standardlist-title {
+		margin: -6px;
+		padding: 3.5px 7px;
+	}
+	h3.sys_standardlist-title {
+		margin: -6px;
+		padding: 3.5px 7px;
+	}
+	h4.sys_standardlist-title {
+		margin: -6px;
+		padding: 3.5px 7px;
+	}
+	h5.sys_standardlist-title {
+		margin: -6px;
+		padding: 3.5px 7px;
+	}
+	.sys_comments-control.sys_add-your-comment.sys_comments-rating-and-buttoninput.sys_button {
+		padding: 0 !important;
+	}
+	.sys_flickrpager .sys_navigation .sys_disabled {
+		color: $color_boulder_approx;
+	}
 }
 .sys_selfservice-reg-control {
-  input,
-  label {
-    margin-bottom: 1em;
-    width: 10em;
-    float: left;
-  }
-
-  input:after {
-    content: ".";
-    display: table;
-    clear: both;
-  }
-
-  fieldset {
-    margin: 1em 0;
-    border: 1px solid #007c9e;
-    padding: 3em 1em 0 10px;
-  }
-
-  legend {
-    position: relative;
-    width: 100%;
-
-    span {
-      padding: 5px 10px;
-      position: absolute;
-      top: -1px;
-      left: -11px;
-      right: -17px;
-      background-color: #007c9e;
-      color: #fff;
-    }
-
-    &:after {
-      padding-bottom: 1em;
-    }
-  }
-
-  fieldset.sys_options {
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
+	line-height: 1.4;
+	input {
+		margin-bottom: 1em;
+		width: 10em;
+		float: left;
+		&:after {
+			content: ".";
+			display: table;
+			clear: both;
+		}
+	}
+	label {
+		margin-bottom: 1em;
+		width: 10em;
+		float: left;
+	}
+	fieldset {
+		margin: 1em 0;
+		border: 1px solid $color_allports_approx;
+		padding: 3em 1em 0 10px;
+		&.sys_options {
+			border: 0;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	legend {
+		position: relative;
+		width: 100%;
+		span {
+			padding: 5px 10px;
+			position: absolute;
+			top: -1px;
+			left: -11px;
+			right: -17px;
+			background-color: $color_allports_approx;
+			color: $white;
+		}
+		&:after {
+			padding-bottom: 1em;
+		}
+	}
+	.sys_options legend {
+		display: none;
+	}
 }
-.sys_validationsummary h2 {
-  font-size: 1em;
+.sys_first {
+	margin-bottom: 0 !important;
+	&.sys_0to9 {
+		width: 2em;
+	}
 }
-
-.sys_form-set:after {
-  content: "";
-  display: table;
-  clear: both;
+.search-wrapper-generic {
+	margin-top: 10px;
+	.sys_search-query-control {
+		max-height: 50px;
+	}
+	.sys_searchbox {
+		height: 50px;
+		width: 90%;
+	}
+	.sys_search-button {
+		width: 10%;
+		height: 50px;
+	}
+	.sys_searchbutton {
+		width: 10%;
+		height: 50px;
+	}
 }
-
+.sys_atoz-control {
+	color: $black;
+	text-transform: uppercase;
+	ul {
+		margin-left: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		list-style: none;
+		&:after {
+			content: "\0020";
+			display: block;
+			overflow: hidden;
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+		&:before {
+			content: "\0020";
+			display: block;
+			overflow: hidden;
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+	}
+	li {
+		text-align: center;
+		color: $white;
+		background-color: $color_allports_approx;
+		font-size: 0.8rem;
+		line-height: 2rem;
+		width: 26px;
+		display: inline-block;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		border: 1px $white solid;
+		margin-bottom: 3px;
+		&:hover {
+			background-color: $black;
+			text-decoration: underline;
+		}
+	}
+	a {
+		color: $white;
+	}
+}
+.sys_bloglist-themed {
+	padding: 0 1.25rem 0 1.25rem;
+}
+.sys_atoz_heading {
+	line-height: 1.2;
+}
+.sys_addcomments-title {
+	background-color: $color_allports_approx;
+	color: $white;
+	font-weight: 400;
+	margin: -9px -9px 10px;
+	padding: 6pt 0;
+}
+dt {
+	&.sys_blogs-datepublished {
+		display: none;
+	}
+	&.sys_blogs-description {
+		display: none;
+	}
+	&.sys_generic_list-description {
+		display: none;
+	}
+	&.sys_events-description {
+		display: none;
+	}
+	&.sys_search-description {
+		display: none;
+	}
+}
+.sys_form-submit {
+	background-color: $color_allports_approx;
+	padding: 12px;
+	&:hover {
+		background-color: $color_sherpa_blue_approx;
+	}
+}
+.sys_paginginfo {
+	float: right;
+}
+.sys_cms-form-validationsummary {
+	color: $color_stiletto_approx;
+}
+.sys_events-contact {
+	float: left;
+	margin-top: 0;
+	padding: 0.5em 1em 0.5em 0;
+}
+.sys_events-date {
+	float: left;
+	margin-top: 0;
+	padding: 0.5em 1em 0.5em 0;
+	display: none;
+}
+.sys_events-time {
+	float: left;
+	margin-top: 0;
+	padding: 0.5em 1em 0.5em 0;
+}
+.sys_events-location {
+	float: left;
+	margin-top: 0;
+	padding: 0.5em 1em 0.5em 0;
+}
+.sys_events-category {
+	display: none;
+}
+.sys_flickrpager {
+	margin: 17.5px 0;
+}
+.sys_search-title {
+	display: none;
+}
+.sys_search-url {
+	display: none;
+}
 .sys_logon-control {
-  input:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .sys_username-label {
-    float: left;
-  }
-
-  input {
-    margin-bottom: 1em;
-    width: 10em;
-  }
-
-  label {
-    margin-bottom: 1em;
-    width: 10em;
-    clear: both;
-    float: left;
-  }
+	line-height: 1.4;
+	input {
+		margin-bottom: 1em;
+		width: 10em;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	.sys_username-label {
+		float: left;
+	}
+	label {
+		margin-bottom: 1em;
+		width: 10em;
+		clear: both;
+		float: left;
+	}
 }
-
-.sys_savepasswordpanel input {
-  width: auto;
+blockquote {
+	line-height: 1.4;
 }
-
 .sys_loginerror {
-  color: #d00;
+	color: $color_red_approx;
 }
-
 .sys_login-button {
-  clear: both;
-  display: table;
-  margin-left: 12em;
+	clear: both;
+	display: table;
+	margin-left: 12em;
 }
-
 .sys_forgotpassword-control {
-  input,
-  label {
-    margin-bottom: 16px;
-    margin-bottom: 1rem;
-  }
+	input {
+		margin-bottom: 1rem;
+	}
+	label {
+		margin-bottom: 1rem;
+	}
 }
-.sys_login,
+.sys_login {
+	padding: 0.25em 1em;
+	background-color: $color_allports_approx;
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
 .sys_logout {
-  padding: 0.25em 1em;
-  background-color: #007c9e;
-  color: #fff;
-  text-decoration: none;
+	padding: 0.25em 1em;
+	background-color: $color_allports_approx;
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
 }
-
 .sys_cms-form-body {
-  .sys_legend,
-  .sys_sectionbreak-header {
-    padding: 6px 0;
-    margin: 0 !important;
-  }
-
-  li::after {
-    padding: 3px 0;
-  }
+	.sys_legend {
+		padding: 6px 0;
+		margin: 0 !important;
+	}
+	.sys_sectionbreak-header {
+		padding: 6px 0;
+		margin: 0 !important;
+	}
+	li::after {
+		padding: 3px 0;
+	}
+	li input {
+		margin: 4px 4px 0 0 !important;
+	}
 }
-
-ul.sys_cms-form-body::after {
-  padding: 3px 0;
+.sys_addcomments-email {
+	display: none;
 }
-.sys_addcomments-email,
-.sys_addcomments-name,
+.sys_addcomments-name {
+	display: none;
+}
 .sys_addcomments-url {
-  display: none;
+	display: none;
 }
-
 .sys_generic_list-subheading {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 .sys_medium {
-  margin: 0 !important;
-}
-.sys_cms-form-body li input {
-  margin: 4px 4px 0 0 !important;
-}
-.sys_subitem h2 {
-  font-weight: 400;
-  margin: 3.9375px 0;
-}
-.sys_comments-control {
-  .sys_addcomments-title,
-  h2,
-  h3 {
-    line-height: 1.2;
-  }
-}
-
-.sys_subitem h2 {
-  line-height: 1.2;
-}
-.sys_login:hover,
-.sys_logout:hover {
-  text-decoration: none;
+	margin: 0 !important;
 }
 #HomePageNews_List {
-  .sys_itemslist {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .sys_subitem {
-    background-color: #007c9e;
-    margin: 0 0 10px;
-    border-radius: 2px;
-    overflow: hidden;
-    width: 100%;
-  }
+	.sys_itemslist {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.sys_subitem {
+		background-color: $color_allports_approx;
+		margin: 0 0 10px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 2px;
+		overflow: hidden;
+		width: 100%;
+	}
 }
-.homepage-whats-on dl .sys_events-date,
-.sys_events-date {
-  display: none;
+.sys_accordianitem sys_open {
+	padding-bottom: 12px;
+}
+.subnav .sys_selected {
+	text-decoration: underline;
+}
+.sys_news-search-control sys_search-button {
+	width: 80px;
+	text-indent: 0;
+	background-color: $white;
+}
+.sys_navigationprevious.sys_disabled {
+	color: $color_boulder_approx;
+}
+.sys_page > a {
+	border: 1px solid $color_silver_approx;
+	padding: 0.2em 0.5em;
+	&:hover {
+		text-decoration: none;
+		background-color: $color_allports_approx;
+		color: $white;
+	}
+}
+.sys_cms-form-control ul.sys_cms-form-body {
+	margin: 0 0 5px;
+	padding: 0;
+	li.sys_cms-form-item {
+		margin: 0 0 5px;
+		padding: 0;
+	}
+}
+.blog-article .sys_addcomments-title {
+	color: $color_mine_shaft_approx;
+}
+.sys_addcomments-row textarea {
+	width: 95%;
+}
+.sys_events-registration.url {
+	float: left;
+	margin-top: 0;
+	padding: 0.5em 1em 0.5em 0;
+}
+dd.sys_events-description {
+	clear: both;
+}
+sys_news-search-control sys_search-button {
+	width: 120px;
+	text-indent: 0;
+}
+.sys_validationsummary h2 {
+	font-size: 1em;
+}
+.sys_form-set:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.sys_savepasswordpanel input {
+	width: auto;
+}
+ul.sys_cms-form-body::after {
+	padding: 3px 0;
+}
+.sys_subitem h2 {
+	font-weight: 400;
+	margin: 3.9375px 0;
+	line-height: 1.2;
+}
+.homepage-whats-on dl .sys_events-date {
+	display: none;
 }
