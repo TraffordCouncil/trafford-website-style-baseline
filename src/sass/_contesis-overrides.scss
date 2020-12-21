@@ -144,30 +144,31 @@
     input.sys_button {
     padding: 0 !important;
   }
+  .sys_datarepeatercontrol .sys_subitem dl dt {
+    color: #333;
+    float: left;
+    min-height: 1.2em;
+    position: relative;
+    width: 100px !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sys_flickrpager .sys_navigation .sys_disabled {
+    color: #757575;
+  }
+  .sys_rating-control .sys_rating-label {
+    display: none;
+  }
 }
 
-.sys_theme-simple .sys_datarepeatercontrol .sys_subitem dl dt {
-  color: #333;
-  float: left;
-  min-height: 1.2em;
-  position: relative;
-  width: 100px !important;
-  margin: 0;
-  padding: 0;
-}
-
-
-.sys_navigationprevious.sys_disabled,
-.sys_theme-simple .sys_flickrpager .sys_navigation .sys_disabled {
+.sys_navigationprevious.sys_disabled {
   color: #757575;
 }
 
-
-.sys_selfservice-reg-control .sys_options legend,
-.sys_theme-simple .sys_rating-control .sys_rating-label {
+.sys_selfservice-reg-control .sys_options legend {
   display: none;
 }
-
 
 .sys_first {
   margin-bottom: 0 !important;
