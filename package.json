@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/TraffordCouncil/trafford-website-style-baseline/issues"
   },
-  "homepage": "https://github.com/TraffordCouncil/trafford-website-style-baseline#readme",
-  "dependencies": {
-    "node-sass": "^5.0.0"
-  }
+  "homepage": "https://github.com/TraffordCouncil/trafford-website-style-baseline#readme"
 }
