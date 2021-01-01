@@ -1073,10 +1073,10 @@ blockquote {
     }
   }
 }
-.social-media-icons {
+ul.social-media-icons {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: auto;
   a {
     font-size: 1.5rem;
     color: $white;
