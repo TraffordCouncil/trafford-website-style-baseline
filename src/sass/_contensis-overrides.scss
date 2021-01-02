@@ -1,4 +1,25 @@
+blockquote {
+  line-height: 1.4;
+}
+dt {
+  &.sys_blogs-datepublished {
+    display: none;
+  }
+  &.sys_blogs-description {
+    display: none;
+  }
+  &.sys_generic_list-description {
+    display: none;
+  }
+  &.sys_events-description {
+    display: none;
+  }
+  &.sys_search-description {
+    display: none;
+  }
+}
 .sys_cms-form-body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   label {
     line-height: 1.4;
   }
@@ -6,6 +27,7 @@
     input,
     select,
     textarea,
+    .sys_instructions,
     .sys_legend {
       font-size: initial;
       margin: 1em 0;
@@ -15,19 +37,10 @@
       font-size: initial;
     }
   }
-  .sys_cms-form-item{
+  .sys_cms-form-item {
     font-size: initial;
-  }
-  .sys_fieldcontent {
-    span {
-      display: block;
-      position: relative;
-      margin-bottom: 1em;
-      min-height: 40px;
-      label {
-        display: block;
-      }
-    }
+    margin: 0;
+    padding: 0;
   }
   .sys_sectionbreak {
     padding: 1em 0 0 0;
@@ -45,71 +58,6 @@
   .sys_twocolumns span {
     margin-bottom: 1em;
   }
-  .sys_checkbox {
-    &.sys_sidebyside span {
-      padding-left: 40px;
-      input {
-        cursor: pointer;
-        position: absolute;
-        z-index: 1;
-        top: -2px;
-        left: -2px;
-        width: 44px;
-        height: 44px;
-        margin: 0;
-        opacity: 0;
-      }
-      label {
-        font-size: initial;
-        display: inline-block;
-        margin-bottom: 0;
-        padding: 8px 15px 5px;
-        cursor: pointer;
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-        &::before {
-          content: "";
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 40px;
-          height: 40px;
-          border: 2px solid currentColor;
-          background: transparent;
-        }
-        &::after {
-          content: "";
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          position: absolute;
-          top: 11px;
-          left: 9px;
-          width: 23px;
-          height: 12px;
-          -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          border: solid;
-          border-top-color: currentcolor;
-          border-top-width: medium;
-          border-right-width: medium;
-          border-bottom-width: medium;
-          border-left-width: medium;
-          border-width: 0 0 5px 5px;
-          border-top-color: transparent;
-          opacity: 0;
-          background: transparent;
-        }
-      }
-    }
-    input[type="checkbox"]:checked + label::after {
-      zoom: 1;
-      filter: alpha(opacity=100);
-      opacity: 1;
-    }
-  }
 }
 .sys_form-set:after {
   content: "";
@@ -121,53 +69,6 @@
   padding: 12px;
   &:hover {
     background-color: $color_sherpa_blue_approx;
-  }
-}
-.radiorequired[type="radio"] {
-  zoom: 1;
-  filter: alpha(opacity=0);
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  top: -2px;
-  left: -2px;
-  width: 44px;
-  height: 44px;
-  margin: 0;
-  opacity: 0;
-  + label {
-    line-height: 1.2;
-    padding: 0 0 0 40px;
-    font-size: initial;
-    &::before {
-      content: "";
-      border: 2px solid;
-      background: 0 0;
-      width: 34px;
-      height: 34px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 50%;
-    }
-    &::after {
-      content: "";
-      border: 10px solid;
-      width: 0;
-      height: 0;
-      position: absolute;
-      top: 7px;
-      left: 7px;
-      border-radius: 50%;
-      zoom: 1;
-      filter: alpha(opacity=0);
-      opacity: 0;
-    }
-  }
-  &:checked + label::after {
-    zoom: 1;
-    filter: alpha(opacity=100);
-    opacity: 1;
   }
 }
 .sys_accordianMenu {
@@ -482,23 +383,6 @@
   margin: -9px -9px 10px;
   padding: 6pt 0;
 }
-dt {
-  &.sys_blogs-datepublished {
-    display: none;
-  }
-  &.sys_blogs-description {
-    display: none;
-  }
-  &.sys_generic_list-description {
-    display: none;
-  }
-  &.sys_events-description {
-    display: none;
-  }
-  &.sys_search-description {
-    display: none;
-  }
-}
 .sys_paginginfo {
   float: right;
 }
@@ -558,9 +442,6 @@ dt {
     clear: both;
     float: left;
   }
-}
-blockquote {
-  line-height: 1.4;
 }
 .sys_loginerror {
   color: $color_red_approx;
@@ -687,3 +568,5 @@ dd.sys_events-description {
     width: 100%;
   }
 }
+// GOV.UK style radio buttons and checkboxes
+@import "gov_uk_inputs";
