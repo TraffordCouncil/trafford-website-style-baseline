@@ -43,7 +43,7 @@ gulp.task('inject', function () {
 gulp.task('default', gulp.series(['clean', 'styles', 'copy-html', 'copy-images', 'copy-css', 'inject']));
 
 gulp.task('watch', () => {
-	gulp.watch(['src/sass/**/*'], (done) => {
+	gulp.watch(['src/**/*'], (done) => {
 		gulp.series(['clean', 'styles', 'copy-html', 'copy-images', 'copy-css', 'inject'])(done);
 	});
 });
