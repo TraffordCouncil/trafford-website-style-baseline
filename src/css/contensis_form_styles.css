@@ -1,0 +1,402 @@
+﻿.sys_cms-form-control ul,
+.sys_cms-form-control ul li {
+list-style-type: none;
+list-style: none;
+}
+
+.sys_cms-form-control ul,
+.sys_cms-form-control ul li,
+.sys_cms-form-control ul li label {
+font-size: 100%;
+margin: 0;
+padding: 0;
+}
+
+ul.sys_cms-form-body {
+font-size: small;
+margin: 0;
+padding: 10px;
+list-style-type: none;
+margin-bottom: 1.5em;
+}
+
+.sys_cms-form-body .sys_cms-form-item {
+margin: 0 0 5px 0;
+padding: 6px 0 8px 1%;
+position: relative;
+background: none;
+background-image: none;
+color: #333;
+font-size: small;
+width: 99%;
+}
+
+.sys_cms-form-body .sys_cms-form-item .sys_hiddenfield {
+padding: 0;
+margin: 0;
+}
+
+ul.sys_cms-form-body:after,
+.sys_cms-form-body li:after {
+content: "...";
+display: block;
+clear: both;
+height: 0;
+line-height: 0;
+visibility: hidden;
+overflow: hidden;
+}
+
+.sys_cms-form-body .sys_fieldlabel {
+display: block;
+font-weight: bold;
+padding-top: .2em;
+padding-bottom: .3em;
+}
+
+.sys_cms-form-body .sys_fieldcontent {
+float: left;
+width: 100%;
+}
+
+
+.sys_cms-form-body .sys_instructions {
+display: none;
+top: 0;
+left: 100%;
+position: absolute;
+border: 1px solid #cfd6d7;
+color: #474c50;
+background: #eceff0;
+margin-top: 5px;
+margin-left: 10px;
+padding: 6px 8px;
+width: 45%;
+font-size: 0.8em;
+}
+
+.sys_labels-left .sys_cms-form-body .sys_instructions,
+.sys_labels-right .sys_cms-form-body .sys_instructions {width: 25%;}
+
+.sys_showinstructions .sys_cms-form-body .sys_cms-form-item { width: 64%;}
+
+.sys_showinstructions.sys_labels-left .sys_cms-form-body .sys_cms-form-item,
+.sys_showinstructions.sys_labels-right .sys_cms-form-body .sys_cms-form-item {width: 74%;}
+
+.sys_showinstructions .sys_cms-form-body .sys_instructions {display: block;}
+
+
+/* Setting Up the Form Body */
+.sys_cms-form-body li input,
+.sys_cms-form-body li select,
+.sys_cms-form-body li textarea,
+.sys_cms-form-body li label,
+.sys_cms-form-body li .sys_legend,
+.sys_cms-form-body li .sys_fieldlabel {
+color: #333;
+font-size: 100%;
+font-family: Arial, Helvetica, sans-serif;
+margin: auto;
+}
+
+.sys_cms-form-body li div label {
+display: block;
+font-size: 90%;
+padding: .2em 0 .5em 0;
+}
+
+/* Inputs */
+.sys_cms-form-body input,
+.sys_cms-form-body textarea {padding: 2px;}
+
+.sys_cms-form-body input.sys_small,
+.sys_cms-form-body select.sys_small {width: 25%;}
+
+.sys_cms-form-body input.sys_medium,
+.sys_cms-form-body select.sys_medium {width: 50%;}
+
+.sys_cms-form-body input.sys_large,
+.sys_cms-form-body select.sys_large {width: 97.6%;}
+
+/* Textarea */
+.sys_cms-form-body textarea.sys_small,
+.sys_cms-form-body textarea.sys_medium,
+.sys_cms-form-body textarea.sys_large {width: 98%;}
+
+.sys_cms-form-body textarea.sys_small {height: 5em;}
+.sys_cms-form-body textarea.sys_medium {height: 12em;}
+.sys_cms-form-body textarea.sys_large {height: 22em;}
+
+
+/* Validation Error */
+.sys_cms-form-body .error,
+.sys_cms-form-body .sys_cms-form-error {
+color: #a33f49;
+font-size: .9em;
+font-weight: bold;
+width: 100%;
+}
+
+/* Section Heading */
+.sys_cms-form-body .sys_sectionbreak {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.sys_cms-form-body .sys_sectionbreak-header {
+float: left;
+width: 100%;
+cursor: text;
+color: #333;
+font-size: 1.5em;
+margin: 0;
+padding: 0;
+}
+
+.sys_cms-form-body .sys_sectionbreak-text {
+float: left;
+width: 100%;
+cursor: text;
+color: #333;
+font-size: .9em;
+margin: 0;
+padding: 0;
+}
+
+/* Name */
+.sys_cms-form-body .sys_namesubelement {
+float: left;
+width: 48%;
+margin: 0 2% 0 0;
+}
+
+.sys_cms-form-body .sys_namesubelement input {
+width: 96%;
+}
+
+/* Last Name */
+.sys_cms-form-body .sys_lastnamesubelement {
+width: 49%;
+margin-right: 0 !important;
+}
+
+.sys_cms-form-body .sys_lastnamesubelement input {
+width: 96%;
+}
+
+/* Date */
+/* Review - jQuery Datepicker may insert an image to trigger date picker */
+.sys_cms-form-body li.sys_date input {
+float: left;
+margin-right: 4px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_date img {
+float: left;
+margin-top: 2px;
+cursor: pointer;
+}
+
+.sys_cms-form-body .sys_checkbox input,
+.sys_cms-form-body .sys_radio input {
+float: left;
+width: 13px;
+height: 13px;
+display: block;
+padding: 0;
+margin: 4px 4px 0 0;
+}
+
+.sys_cms-form-body .sys_checkbox label,
+.sys_cms-form-body .sys_radio label {
+line-height: 150%;
+padding: .2em 0;
+}
+
+/* Other */
+
+.sys_cms-form-body .sys_choices_other {clear: both;}
+
+.sys_cms-form-body .sys_choices_other .sys_otherlabel {
+float: none;
+display: block;
+clear: both;
+width: 120px;
+height: auto;
+padding: .2em 0;
+margin: 0;
+}
+
+.sys_cms-form-body .sys_choices_other .sys_medium {
+float: none;
+display: block;
+clear: both;
+width: 120px;
+height: auto;
+padding: 2px 0;
+margin: 0;
+}
+
+
+/* Time */
+.sys_cms-form-body .sys_time .sys_timesubelement {
+float: left;
+width: 50px;
+margin: 0 5px 0 0;
+}
+
+.sys_cms-form-body .sys_time select {
+padding: 1px 1px 1px 0;
+min-height: 20px;
+}
+
+.sys_cms-form-body .sys_time input {
+width: 38px;
+}
+
+/* Address */
+.sys_cms-form-body .sys_address label {
+padding-top: .7em;
+padding-bottom: .15em;
+}
+
+
+/* Side By Side */
+.sys_cms-form-body .sys_sidebyside span {
+width: auto;
+white-space: nowrap;
+padding-right: 8px;
+}
+
+.sys_cms-form-body .sys_sidebyside input {
+float: none;
+display: inline;
+vertical-align: top;
+}
+
+.sys_cms-form-body .sys_sidebyside span label {
+float: none;
+display: inline;
+}
+
+/* Columns */
+.sys_cms-form-body .sys_onecolumn span {
+display: block;
+margin: 0;
+width: 100%;
+}
+
+.sys_cms-form-body .sys_twocolumns span {
+width: 48%;
+margin: 0 5px 0 0;
+float: left;
+}
+
+.sys_cms-form-body .sys_threecolumns span {
+float: left;
+width: 30%;
+margin: 0 5px 0 0;
+}
+
+.sys_cms-form-body .sys_boxclearer {
+clear: left;
+}
+
+/* Captcha */
+#recaptcha_area {margin-left: 16px;}
+
+#captchaStatus {
+margin-left: 16px;
+margin-top: 8px;
+color: #a33f49;
+font-weight: bold;
+}
+
+.sys_cms-form-body .sys_legend {
+font-weight: bold;
+}
+
+.sys_cms-form-body .sys_legend .sys_required {
+position: static;
+display: inline;
+margin: 0;
+padding: 0;
+font-size: 110%;
+float: none;
+}
+
+.sys_required {
+margin-left: 4px;
+color: #a33f49;
+}
+
+/* Top Label Positioning */
+.sys_labels-top .sys_sidebyside .sys_legend {
+width: 100%;
+}
+
+/* Left Label Positioning */
+.sys_labels-left .sys_legend,
+.sys_labels-left .sys_fieldlabel {
+float: left;
+width: 31%;
+padding-right: 1.5%;
+}
+
+.sys_labels-left .sys_cms-form-body .sys_fieldcontent {
+float: left;
+width: 65%;
+}
+
+/* Right Label Positioning */
+.sys_labels-right .sys_legend,
+.sys_labels-right .sys_fieldlabel {
+float: left;
+text-align: right;
+width: 31%;
+padding-right: 3%;
+}
+
+/* simple legend */
+.sys_legend--simple {
+    padding:0;
+}
+
+.sys_labels-right .sys_cms-form-body .sys_fieldcontent {
+float: left;
+width: 65%;
+}
+
+.sys_form-progress {
+position: absolute;
+z-index: 9999;
+width: 150px;
+height: 18px;
+color: #fff;
+padding: 12px;
+background: #3f4245;
+text-align: center;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.1em;
+margin: 1px 10px 0 0;
+border: 3px solid #7c7f82;
+border-radius: 5px;
+background: #3f4245 url("images/progress.gif") no-repeat 9px 9px;
+}
+
+/* Set IE10/IE11 File Upload Input Background */
+.sys_cms-form-body input[type="file"]::-ms-value {
+background: white;
+}
+
+.sys_hiddenfield {
+display: none;
+}
+
+/* unstyled fieldset */
+.sys_theme-simple .sys_fieldset--simple {
+    padding: 0;
+    border: none;
+    margin: 0;
+}

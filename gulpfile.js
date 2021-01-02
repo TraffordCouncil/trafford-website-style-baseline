@@ -28,6 +28,11 @@ gulp.task('copy-images', function () {
 		.pipe(gulp.dest('./dist/images'));
 });
 
+gulp.task('copy-css', function () {
+	return gulp.src('./src/css/*.css')
+		.pipe(gulp.dest('./dist/css'));
+});
+
 gulp.task('inject', function () {
 	const target = gulp.src('./dist/html/*.html');
 	const sources = gulp.src(['./dist/**/*.css'], { read: false }, { relative: true });
@@ -35,10 +40,10 @@ gulp.task('inject', function () {
 		.pipe(gulp.dest('./dist/html'));
 });
 
-gulp.task('default', gulp.series(['clean', 'styles', 'copy-html', 'copy-images', 'inject']));
+gulp.task('default', gulp.series(['clean', 'styles', 'copy-html', 'copy-images', 'copy-css', 'inject']));
 
 gulp.task('watch', () => {
-	gulp.watch('src/sass/**/*.scss', (done) => {
-		gulp.series(['clean', 'styles'])(done);
+	gulp.watch(['src/sass/**/*'], (done) => {
+		gulp.series(['clean', 'styles', 'copy-html', 'copy-images', 'copy-css', 'inject'])(done);
 	});
 });
