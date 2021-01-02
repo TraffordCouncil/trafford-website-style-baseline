@@ -1,13 +1,3 @@
-.sys_cms-form-control {
-  ul.sys_cms-form-body {
-    margin: 0 0 5px;
-    padding: 0;
-    li.sys_cms-form-item {
-      margin: 0 0 5px;
-      padding: 0;
-    }
-  }
-}
 .sys_cms-form-body {
   label {
     line-height: 1.4;
@@ -24,9 +14,6 @@
     .sys_fieldlabel {
       font-size: initial;
     }
-    // &::after {
-    //   padding: 3px 0;
-    // }
   }
   .sys_fieldcontent {
     span {
@@ -121,17 +108,11 @@
     }
   }
 }
-
-.sys_cms-form-body .sys_cms-form-item.sys_sectionbreak{
-  padding-top: 2em;
-}
-
 .sys_form-set:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .sys_form-submit {
   background-color: $color_allports_approx;
   padding: 12px;
@@ -139,7 +120,6 @@
     background-color: $color_sherpa_blue_approx;
   }
 }
-
 .radiorequired[type="radio"] {
   zoom: 1;
   filter: alpha(opacity=0);
