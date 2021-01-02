@@ -1,13 +1,44 @@
+.sys_cms-form-control {
+  ul.sys_cms-form-body {
+    margin: 0 0 5px;
+    padding: 0;
+    li.sys_cms-form-item {
+      margin: 0 0 5px;
+      padding: 0;
+    }
+  }
+}
 .sys_cms-form-body {
   legend.sys_legend.sys_legend--simple {
     margin: 1em 0;
   }
+  li {
+    input,
+    select,
+    textarea,
+    label,
+    legend.sys_legend.sys_legend--simple,
+    .sys_fieldlabel {
+      font-size: initial;
+    }
+    &::after {
+      padding: 3px 0;
+    }
+  }
+  .sys_fieldcontent {
+    span {
+      display: block;
+      position: relative;
+      margin-bottom: 1em;
+      min-height: 40px;
+      label {
+        display: block;
+      }
+    }
+  }
   .sys_legend,
   .sys_fieldlabel {
     font-size: initial;
-  }
-  .sys_twocolumns span {
-    margin-bottom: 1em;
   }
   .sys_sectionbreak-header {
     font-size: 2.5rem;
@@ -17,34 +48,29 @@
   .sys_sectionbreak-text {
     font-size: initial;
   }
-  li::after {
-    padding: 3px 0;
+  .sys_sidebyside span {
+    white-space: initial;
   }
-  li input {
-    margin: 4px 4px 0 0 !important;
-  }
-}
-
-.sys_cms-form-body li input,
-.sys_cms-form-body li select,
-.sys_cms-form-body li textarea,
-.sys_cms-form-body li label,
-.sys_cms-form-body li .sys_legend,
-.sys_cms-form-body li .sys_fieldlabel {
-  font-size: initial;
-}
-
-.sys_fieldcontent {
-  span {
-    display: block;
-    position: relative;
+  .sys_twocolumns span {
     margin-bottom: 1em;
-    min-height: 40px;
   }
 }
+// ul.sys_cms-form-body::after {
+//   padding: 3px 0;
+// }
 
-.sys_cms-form-body .sys_sidebyside span {
-  white-space: initial;
+.sys_form-set:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sys_form-submit {
+  background-color: $color_allports_approx;
+  padding: 12px;
+  &:hover {
+    background-color: $color_sherpa_blue_approx;
+  }
 }
 
 .radiorequired[type="radio"] {
@@ -88,14 +114,12 @@
       opacity: 0;
     }
   }
-
   &:checked + label::after {
     zoom: 1;
     filter: alpha(opacity=100);
     opacity: 1;
   }
 }
-
 .sys_accordianMenu {
   padding-bottom: 12px;
   li {
@@ -425,13 +449,6 @@ dt {
     display: none;
   }
 }
-.sys_form-submit {
-  background-color: $color_allports_approx;
-  padding: 12px;
-  &:hover {
-    background-color: $color_sherpa_blue_approx;
-  }
-}
 .sys_paginginfo {
   float: right;
 }
@@ -567,19 +584,15 @@ blockquote {
     color: $white;
   }
 }
-.sys_cms-form-control ul.sys_cms-form-body {
-  margin: 0 0 5px;
-  padding: 0;
-  li.sys_cms-form-item {
-    margin: 0 0 5px;
-    padding: 0;
+.blog-article {
+  .sys_addcomments-title {
+    color: $color_mine_shaft_approx;
   }
 }
-.blog-article .sys_addcomments-title {
-  color: $color_mine_shaft_approx;
-}
-.sys_addcomments-row textarea {
-  width: 95%;
+.sys_addcomments-row {
+  textarea {
+    width: 95%;
+  }
 }
 .sys_events-registration.url {
   float: left;
@@ -589,31 +602,23 @@ blockquote {
 dd.sys_events-description {
   clear: both;
 }
-sys_news-search-control sys_search-button {
-  width: 120px;
-  text-indent: 0;
-}
-.sys_validationsummary h2 {
+.sys_news-search-control “ .sys_validationsummary h2 {
   font-size: 1em;
 }
-.sys_form-set:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.sys_savepasswordpanel input {
-  width: auto;
-}
-ul.sys_cms-form-body::after {
-  padding: 3px 0;
+.sys_savepasswordpanel {
+  input {
+    width: auto;
+  }
 }
 .sys_subitem h2 {
   font-weight: 400;
   margin: 3.9375px 0;
   line-height: 1.2;
 }
-.homepage-whats-on dl .sys_events-date {
-  display: none;
+.homepage-whats-on dl {
+  .sys_events-date {
+    display: none;
+  }
 }
 #HomePageNews_List {
   .sys_itemslist {
