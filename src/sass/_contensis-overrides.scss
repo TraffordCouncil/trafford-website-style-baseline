@@ -16,15 +16,17 @@
     input,
     select,
     textarea,
-    label,
-    .sys_legend,
-    .sys_fieldlabel {
+    .sys_legend {
       font-size: initial;
       margin: 1em 0;
     }
-    &::after {
-      padding: 3px 0;
+    label,
+    .sys_fieldlabel {
+      font-size: initial;
     }
+    // &::after {
+    //   padding: 3px 0;
+    // }
   }
   .sys_fieldcontent {
     span {
@@ -37,13 +39,16 @@
       }
     }
   }
-  .sys_sectionbreak-header {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  .sys_sectionbreak-text {
-    font-size: initial;
+  .sys_sectionbreak {
+    padding-top: 1em;
+    &-header {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    &-text {
+      font-size: initial;
+    }
   }
   .sys_sidebyside span {
     white-space: initial;
@@ -117,6 +122,11 @@
     }
   }
 }
+
+.sys_cms-form-body .sys_cms-form-item.sys_sectionbreak{
+  padding-top: 2em;
+}
+
 .sys_form-set:after {
   content: "";
   display: table;
