@@ -29,6 +29,9 @@ a[href$=".ppt"]::after {
 footer {
   margin-top: 2em;
 }
+input:disabled+label{
+  opacity: 0.5;
+}
 .atoz {
   margin-left: 0;
   margin-bottom: 0;
