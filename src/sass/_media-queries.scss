@@ -62,10 +62,9 @@
     width: 190px;
   }
   .login {
-    padding: 24px 0;
-  }
-  .login-generic {
-    margin-top: -150px;
+    position: absolute;
+    top:0.25em;
+    right: 0.5em;
   }
   .half-width {
     width: 100% !important;
